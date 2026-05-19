@@ -86,5 +86,21 @@
 @media (max-width: 600px) {
   .edu-row {
     grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .edu-row {
+    padding: 16px 16px;
+  }
+
+  .languages-bar {
+    padding: 10px 16px;
+    gap: 12px;
+  }
+
+  .languages-bar-items {
+    gap: 12px;
   }
 }

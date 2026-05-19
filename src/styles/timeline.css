@@ -283,3 +283,13 @@
   font-size: 10px;
 }
 
+@media (max-width: 640px) {
+  .tl-wrap {
+    padding: 16px 16px 24px;
+  }
+
+  .tl-h-wrap {
+    padding: 0 0 12px;
+  }
+}
+

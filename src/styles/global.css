@@ -88,3 +88,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+@media (max-width: 640px) {
+  .section-header {
+    padding: 18px 16px 14px;
+  }
+}

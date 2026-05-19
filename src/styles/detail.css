@@ -146,3 +146,22 @@
     justify-content: flex-start;
   }
 }
+
+@media (max-width: 640px) {
+  .detail-back {
+    padding: 14px 16px;
+  }
+
+  .detail-hero {
+    padding: 24px 16px 20px;
+    gap: 20px;
+  }
+
+  .detail-title {
+    font-size: 26px;
+  }
+
+  .detail-body {
+    padding: 20px 16px;
+  }
+}

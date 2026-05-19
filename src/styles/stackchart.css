@@ -70,3 +70,18 @@
 .sc-toggle:hover {
   color: var(--color-text-1);
 }
+
+@media (max-width: 640px) {
+  .stackchart-list {
+    padding: 16px 16px 20px;
+  }
+
+  .sc-row {
+    grid-template-columns: 80px 1fr 36px;
+    gap: 10px;
+  }
+
+  .sc-toggle {
+    padding: 10px 16px 12px;
+  }
+}

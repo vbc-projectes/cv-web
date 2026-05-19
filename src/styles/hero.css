@@ -152,6 +152,30 @@
   }
 }
 
+@media (max-width: 640px) {
+  .hero-left,
+  .hero-right {
+    padding: 28px 16px;
+  }
+
+  .hero-name {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-bio {
+    font-size: 13px;
+  }
+
+  .contact-item {
+    padding: 14px 16px;
+  }
+
+  .hero-now {
+    padding: 10px 16px;
+  }
+}
+
 /* Now Working On widget */
 .hero-now {
   display: flex;

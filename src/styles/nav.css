@@ -66,3 +66,33 @@
   color: var(--color-text-1);
   border-color: var(--color-text-2);
 }
+
+@media (max-width: 640px) {
+  .nav {
+    padding: 0 16px;
+    gap: 8px;
+  }
+
+  .nav-links {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 16px;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-logo {
+    font-size: 13px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .nav-controls {
+    flex-shrink: 0;
+  }
+}
