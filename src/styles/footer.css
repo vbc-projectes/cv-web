@@ -1,0 +1,15 @@
+.footer {
+  margin-top: auto;
+  padding: 20px 32px;
+  border-top: 0.5px solid var(--color-border);
+  background: var(--color-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copy {
+  font-size: 11px;
+  color: var(--color-text-3);
+  letter-spacing: 0.04em;
+}

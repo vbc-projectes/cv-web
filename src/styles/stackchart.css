@@ -1,0 +1,72 @@
+.stackchart {
+  background: var(--color-surface);
+  border-top: 0.5px solid var(--color-border);
+}
+
+.stackchart-header {
+  border-top: none !important;
+}
+
+.stackchart-list {
+  padding: 20px 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.sc-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 40px;
+  align-items: center;
+  gap: 16px;
+}
+
+.sc-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-2);
+  letter-spacing: 0.04em;
+  text-align: right;
+}
+
+.sc-bar-wrap {
+  height: 3px;
+  background: var(--color-border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.sc-bar {
+  height: 100%;
+  background: var(--color-text-1);
+  border-radius: 2px;
+  transition: width 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sc-years {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-3);
+  letter-spacing: 0.04em;
+}
+
+.sc-toggle {
+  display: block;
+  width: 100%;
+  padding: 10px 32px 14px;
+  background: none;
+  border: none;
+  border-top: 0.5px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-3);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.15s;
+}
+
+.sc-toggle:hover {
+  color: var(--color-text-1);
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "uib-master",
+    "period": "oct.2025 — Presente",
+    "degree": { "es": "Máster en Física Avanzada y Matemática Aplicada", "en": "M.Sc. Advanced Physics and Applied Mathematics" },
+    "institution": "Universitat de les Illes Balears",
+    "summary": {
+      "es": "Machine Learning aplicado · Simulación de fluidos · Tratamiento de imágenes",
+      "en": "Applied Machine Learning · Fluid simulation · Image processing"
+    },
+    "description": {
+      "es": "Máster con orientación en el tratamiento de imágenes y datos mediante técnicas de Machine Learning, así como en la simulación de fluidos.",
+      "en": "Master's degree focused on image and data processing using Machine Learning techniques, as well as fluid simulation."
+    },
+    "tags": ["Machine Learning", "Física Computacional", "Simulación", "Matemática Aplicada"]
+  },
+  {
+    "id": "uib-grado",
+    "period": "sep.2018 — jun.2025",
+    "degree": { "es": "Grado de Física", "en": "B.Sc. Physics" },
+    "institution": "Universitat de les Illes Balears",
+    "summary": {
+      "es": "Física teórica y experimental · Programación científica",
+      "en": "Theoretical and experimental physics · Scientific programming"
+    },
+    "description": {
+      "es": "Formación en física teórica y experimental, con fuerte componente en programación científica con Python y MATLAB.",
+      "en": "Education in theoretical and experimental physics, with a strong component in scientific programming with Python and MATLAB."
+    },
+    "tags": ["Python", "MATLAB", "Física", "Cálculo", "Estadística"]
+  },
+  {
+    "id": "socib-campanya",
+    "period": "mar. 2023",
+    "degree": { "es": "Campaña Oceanográfica con el SOCIB", "en": "Oceanographic Campaign with SOCIB" },
+    "institution": "Universitat de les Illes Balears · SOCIB",
+    "summary": {
+      "es": "Toma de datos oceanográficos en el mar Mediterráneo",
+      "en": "Oceanographic data collection in the Mediterranean Sea"
+    },
+    "description": {
+      "es": "Participación en campaña oceanográfica a bordo de embarcación del SOCIB (Sistema d'Observació Costaner de les Illes Balears) para la toma de datos en el mar Mediterráneo.",
+      "en": "Participation in an oceanographic campaign aboard a SOCIB vessel for data collection in the Mediterranean Sea."
+    },
+    "tags": ["Oceanografía", "SOCIB", "Trabajo de campo"]
+  },
+  {
+    "id": "efset",
+    "period": "2024",
+    "degree": { "es": "Certificado EF SET Inglés 85/100 (C2 Proficiente)", "en": "EF SET English Certificate 85/100 (C2 Proficient)" },
+    "institution": "EF Standard English Test",
+    "summary": {
+      "es": "Nivel C2 Proficiente · 85/100",
+      "en": "C2 Proficient level · 85/100"
+    },
+    "description": {
+      "es": "Certificación oficial de nivel de inglés C2 Proficiente con puntuación 85/100 en el examen EF SET.",
+      "en": "Official C2 Proficient English level certification with a score of 85/100 on the EF SET exam."
+    },
+    "tags": ["Inglés", "C2", "EF SET"]
+  }
+]

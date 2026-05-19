@@ -1,0 +1,66 @@
+[
+  {
+    "id": "spain-living-lab",
+    "position": 10,
+    "current": true,
+    "period": "oct. 2025 — Presente",
+    "title": "Spain Living Lab – Data Space Turístico",
+    "image": "https://placehold.co/280x220/1e3a5f/a0bcd4?text=Data+Space",
+    "summary": {
+      "es": "Data Space turístico para Baleares · Azure AKS · SIMPL-OPEN",
+      "en": "Tourism Data Space for Balearic Islands · Azure AKS · SIMPL-OPEN"
+    },
+    "description": {
+      "es": "Despliegue del Data Space turístico para las Islas Baleares basado en arquitectura SIMPL-OPEN, en el marco del proyecto Spain Living Lab. Infraestructura en Azure Kubernetes Service.",
+      "en": "Deployment of the tourism Data Space for the Balearic Islands based on SIMPL-OPEN architecture, within the Spain Living Lab project. Infrastructure on Azure Kubernetes Service."
+    },
+    "details": {
+      "es": ["Infraestructura desplegada en Azure Kubernetes Service (AKS)", "Validación local y Cloudflare Tunnel para adhesión de entidades", "Modelos de forecasting con Machine Learning en Azure Databricks", "Desarrollo de indicadores turísticos e KPIs"],
+      "en": ["Infrastructure deployed on Azure Kubernetes Service (AKS)", "Local validation and Cloudflare Tunnel for entity onboarding", "Forecasting models with Machine Learning on Azure Databricks", "Tourism indicator and KPI development"]
+    },
+    "tags": ["Azure AKS", "Kubernetes", "SIMPL-OPEN", "Databricks", "ML", "Cloudflare Tunnel"],
+    "repo": "https://github.com/cpacheco-perello"
+  },
+  {
+    "id": "ocean-vortex",
+    "position": 9,
+    "period": "ene. 2025 — abr. 2025",
+    "title": "Análisis de Vórtices Oceánicos – IMEDEA",
+    "image": "https://placehold.co/280x220/1e3a5f/a0bcd4?text=Oceanografía",
+    "summary": {
+      "es": "Vórtices en el Mediterráneo · Datos SWOT y AVISO",
+      "en": "Mediterranean vortices · SWOT and AVISO data"
+    },
+    "description": {
+      "es": "Análisis de vórtices oceánicos en el Mediterráneo con datos satelitales SWOT y AVISO. Procesamiento con Python y MATLAB, y visualización publicada en GitHub Pages.",
+      "en": "Analysis of oceanic vortices in the Mediterranean using SWOT and AVISO satellite data. Processing with Python and MATLAB, with results published on GitHub Pages."
+    },
+    "details": {
+      "es": ["Procesamiento de datos satelitales SWOT y AVISO", "Análisis estadístico y visualización con Python y MATLAB", "Publicación interactiva de resultados en GitHub Pages"],
+      "en": ["Processing of SWOT and AVISO satellite data", "Statistical analysis and visualization with Python and MATLAB", "Interactive publication of results on GitHub Pages"]
+    },
+    "tags": ["Python", "MATLAB", "Oceanografía", "GitHub Pages", "SWOT", "AVISO"],
+    "repo": "https://github.com/cpacheco-perello"
+  },
+  {
+    "id": "hidro-palma",
+    "position": 8,
+    "period": "nov. 2024 — may. 2025",
+    "title": "Análisis Hidrológico de Palma – EMAYA",
+    "image": "https://placehold.co/280x220/1e3a5f/a0bcd4?text=Hidrología",
+    "summary": {
+      "es": "Pluviómetros en la cuenca de Palma · Python · GIS",
+      "en": "Rain gauges in Palma basin · Python · GIS"
+    },
+    "description": {
+      "es": "Procesamiento de datos de pluviómetros en la cuenca de Palma de Mallorca con Python. Cartografía de infraestructuras de aguas regeneradas en ArcGIS y QGIS.",
+      "en": "Processing of rain gauge data in the Palma de Mallorca basin with Python. Mapping of reclaimed water infrastructure in ArcGIS and QGIS."
+    },
+    "details": {
+      "es": ["Análisis de correlación y caracterización de eventos de lluvia con Python", "Esbozo en ArcGIS para conexión de zonas verdes a la red de aguas regeneradas", "Mapas hidrológicos de Mallorca en QGIS", "Informe legislativo sobre usos de aguas regeneradas"],
+      "en": ["Rainfall correlation and characterization with Python", "ArcGIS sketch for connecting green areas to the reclaimed water network", "Hydrological maps of Mallorca in QGIS", "Legislative report on reclaimed water uses"]
+    },
+    "tags": ["Python", "ArcGIS", "QGIS", "Hidrología", "GIS"],
+    "repo": "https://github.com/cpacheco-perello"
+  }
+]

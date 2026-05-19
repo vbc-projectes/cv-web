@@ -1,0 +1,64 @@
+.exp-row {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  gap: 24px;
+  align-items: start;
+  padding: 22px 32px;
+  border-bottom: 0.5px solid var(--color-border);
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.exp-row:hover {
+  background: var(--color-bg);
+}
+
+.exp-period {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--color-text-3);
+  padding-top: 2px;
+  white-space: nowrap;
+}
+
+.exp-company {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  margin-bottom: 2px;
+}
+
+.exp-role {
+  font-size: 12px;
+  color: var(--color-text-2);
+  margin-bottom: 4px;
+}
+
+.exp-summary {
+  font-size: 11px;
+  color: var(--color-text-3);
+  letter-spacing: 0.02em;
+}
+
+.exp-arrow {
+  color: var(--color-text-3);
+  font-size: 16px;
+  padding-top: 2px;
+  transition: transform 0.15s;
+}
+
+.exp-row:hover .exp-arrow {
+  transform: translateX(3px);
+}
+
+@media (max-width: 600px) {
+  .exp-row {
+    grid-template-columns: 1fr auto;
+  }
+  .exp-period {
+    grid-column: 1 / -1;
+    padding-top: 0;
+  }
+}

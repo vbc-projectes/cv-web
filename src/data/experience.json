@@ -1,0 +1,97 @@
+[
+  {
+    "id": "fueib",
+    "period": "oct. 2025 — Presente",
+    "company": "Fundació Universitat-Empresa de les Illes Balears (FUEIB)",
+    "role": "Ingeniero de Espacios de Datos / Científico de Datos",
+    "summary": {
+      "es": "Data Space turístico para Baleares · Arquitectura SIMPL-OPEN en AKS",
+      "en": "Tourism Data Space for Balearic Islands · SIMPL-OPEN on AKS"
+    },
+    "description": {
+      "es": "Despliegue del Data Space turístico para las Islas Baleares basado en arquitectura SIMPL-OPEN, en el marco del proyecto Spain Living Lab. Infraestructura desplegada en Azure Kubernetes Service (AKS). Validación en entorno local y Cloudflare Tunnel para testear el proceso de adhesión de entidades al espacio de datos.",
+      "en": "Deployment of the tourism Data Space for the Balearic Islands based on SIMPL-OPEN architecture, within the Spain Living Lab project. Infrastructure deployed on Azure Kubernetes Service (AKS). Local environment validation and Cloudflare Tunnel to test the entity onboarding process to the data space."
+    },
+    "responsibilities": {
+      "es": ["Despliegue de infraestructura en Azure Kubernetes Service (AKS)", "Configuración de Cloudflare Tunnel para pruebas de adhesión al espacio de datos", "Desarrollo de modelos de forecasting con Machine Learning en Azure Databricks", "Desarrollo de indicadores e KPIs turísticos en Azure Databricks"],
+      "en": ["Infrastructure deployment on Azure Kubernetes Service (AKS)", "Cloudflare Tunnel configuration for data space onboarding testing", "Development of forecasting models with Machine Learning on Azure Databricks", "Development of tourism KPIs and indicators on Azure Databricks"]
+    },
+    "tags": ["Azure AKS", "Kubernetes", "SIMPL-OPEN", "Azure Databricks", "Machine Learning", "Cloudflare Tunnel"]
+  },
+  {
+    "id": "meteoclim",
+    "period": "jun. 2025 — oct. 2025",
+    "company": "Meteoclim",
+    "role": "Técnico y Meteorólogo Junior",
+    "summary": {
+      "es": "Predicciones meteorológicas · Monitorización de servidores",
+      "en": "Weather forecasting · Server monitoring"
+    },
+    "description": {
+      "es": "Redacción de predicciones meteorológicas para medios de comunicación. Monitorización y control de errores en servidores y plataformas. Apoyo técnico en tareas de Atmosphere Division.",
+      "en": "Writing weather forecasts for media outlets. Monitoring and error control on servers and platforms. Technical support for Atmosphere Division tasks."
+    },
+    "responsibilities": {
+      "es": ["Redacción de predicciones meteorológicas para medios de comunicación", "Monitorización y control de errores en servidores y plataformas", "Apoyo técnico en tareas de Atmosphere Division"],
+      "en": ["Writing weather forecasts for media outlets", "Server and platform monitoring and error control", "Technical support for Atmosphere Division tasks"]
+    },
+    "tags": ["Meteorología", "Linux", "Monitorización"]
+  },
+  {
+    "id": "consultoria-movilidad",
+    "period": "may. 2025 — ago. 2025",
+    "company": "Meteoclim",
+    "role": "Consultor Técnico · Movilidad",
+    "summary": {
+      "es": "Análisis de cupo de vehículos en Ibiza · Informe técnico legal",
+      "en": "Vehicle quota analysis in Ibiza · Legal technical report"
+    },
+    "description": {
+      "es": "Consultoría técnica sobre el cupo de vehículos en Ibiza: análisis de idoneidad, proporcionalidad e impacto en el transporte marítimo mediante análisis de datos. Redacción de informe técnico presentado por el cliente en recurso legal ante administración.",
+      "en": "Technical consultancy on vehicle quota in Ibiza: suitability, proportionality and maritime transport impact analysis using data analysis. Drafting of technical report submitted by the client in a legal appeal before the administration."
+    },
+    "responsibilities": {
+      "es": ["Análisis de idoneidad y proporcionalidad del cupo de vehículos", "Estudio del impacto en el transporte marítimo mediante análisis de datos", "Redacción de informe técnico para recurso legal ante administración"],
+      "en": ["Suitability and proportionality analysis of the vehicle quota", "Maritime transport impact study using data analysis", "Drafting of technical report for a legal appeal before the administration"]
+    },
+    "tags": ["Python", "Análisis de datos", "Informe técnico"]
+  },
+  {
+    "id": "emaya",
+    "period": "nov. 2024 — may. 2025",
+    "company": "EMAYA, S.A.",
+    "role": "Prácticas · Departament d'Estratègia i Desenvolupament",
+    "summary": {
+      "es": "Análisis hidrológico · Cartografía ArcGIS/QGIS",
+      "en": "Hydrological analysis · ArcGIS/QGIS cartography"
+    },
+    "description": {
+      "es": "Análisis de datos hidrológicos de pluviómetros en la cuenca de Palma de Mallorca mediante Python. Investigación sobre el marco legislativo de aguas regeneradas. Desarrollo de cartografía en ArcGIS y QGIS para infraestructuras de aguas regeneradas.",
+      "en": "Hydrological data analysis from rain gauges in the Palma de Mallorca basin using Python. Research on the regulatory framework for reclaimed water. Development of cartography in ArcGIS and QGIS for reclaimed water infrastructure."
+    },
+    "responsibilities": {
+      "es": ["Procesamiento de datos de pluviómetros con Python (correlación y caracterización de lluvias)", "Revisión del marco legislativo de aguas regeneradas y redacción de informe recopilatorio", "Esbozo en ArcGIS para infraestructuras de conexión a red de aguas regeneradas", "Elaboración de mapas hidrológicos de Mallorca en QGIS"],
+      "en": ["Rain gauge data processing with Python (correlation and rainfall characterization)", "Review of reclaimed water regulatory framework and drafting of summary report", "ArcGIS sketch for infrastructure connecting green areas to the reclaimed water network", "Hydrological mapping of Mallorca in QGIS"]
+    },
+    "tags": ["Python", "ArcGIS", "QGIS", "Hidrología", "GIS"]
+  },
+  {
+    "id": "imedea",
+    "period": "ene. 2025 — abr. 2025",
+    "company": "IMEDEA – Institut Mediterrani d'Estudis Avançats",
+    "role": "Prácticas Universitarias · Oceanografía Física",
+    "summary": {
+      "es": "Análisis de vórtices oceánicos · Datos satelitales SWOT/AVISO",
+      "en": "Oceanic vortex analysis · SWOT/AVISO satellite data"
+    },
+    "description": {
+      "es": "Análisis de vórtices oceánicos en el Mediterráneo con datos satelitales (SWOT y AVISO). Procesamiento de datos con Python/MATLAB y visualización de resultados en web mediante GitHub Pages.",
+      "en": "Analysis of oceanic vortices in the Mediterranean using satellite data (SWOT and AVISO). Data processing with Python/MATLAB and web visualization of results via GitHub Pages."
+    },
+    "responsibilities": {
+      "es": ["Análisis de vórtices oceánicos en el Mediterráneo con datos SWOT y AVISO", "Procesamiento y visualización de datos con Python y MATLAB", "Publicación de resultados en web con GitHub Pages"],
+      "en": ["Analysis of oceanic vortices in the Mediterranean with SWOT and AVISO data", "Data processing and visualization with Python and MATLAB", "Web publication of results using GitHub Pages"]
+    },
+    "tags": ["Python", "MATLAB", "Oceanografía", "GitHub Pages", "SWOT", "AVISO"]
+  }
+]

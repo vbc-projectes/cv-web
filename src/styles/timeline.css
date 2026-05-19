@@ -1,0 +1,285 @@
+.tl-wrap {
+  padding: 24px 32px 32px;
+  background: var(--color-surface);
+  border-bottom: 0.5px solid var(--color-border);
+}
+
+.tl-container {
+  position: relative;
+}
+
+/* Vertical axis line */
+.tl-axis {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--color-border);
+}
+
+/* Year label + tick row */
+.tl-year-row {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.tl-year-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-3);
+  letter-spacing: 0.04em;
+  width: 52px;
+  text-align: right;
+  padding-right: 8px;
+}
+
+.tl-tick {
+  width: 8px;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.tl-month-only .tl-tick {
+  width: 4px;
+  opacity: 0.5;
+}
+
+.tl-month-label {
+  font-size: 9px !important;
+  opacity: 0.5;
+  letter-spacing: 0 !important;
+}
+
+/* Experience bar */
+.tl-bar {
+  position: absolute;
+  border: 0.5px solid var(--color-border);
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4px;
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.tl-bar-0 {
+  border-left: 2px solid var(--color-text-1);
+}
+
+.tl-bar-1 {
+  border-left: 2px solid var(--color-text-3);
+}
+
+.tl-bar-2 {
+  border-left: 2px solid var(--color-text-2);
+}
+
+.tl-bar-3 {
+  border-left: 2px solid var(--color-text-3);
+}
+
+.tl-year-hoy {
+  color: var(--color-text-1) !important;
+  font-weight: 500;
+}
+
+.tl-bar:hover {
+  background: var(--color-bg);
+  border-color: var(--color-text-3);
+}
+
+.tl-bar-company {
+  font-family: var(--font-display);
+  font-size: 15px;
+  color: var(--color-text-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.tl-bar-role {
+  font-size: 11px;
+  color: var(--color-text-3);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Type differentiation ───────────────────────────────────────────── */
+.tl-bar-exp  { border-left: 2px solid var(--color-text-1); }
+.tl-bar-edu  { border-left: 2px solid #5b8fcc; }
+.tl-bar-proj { border-left: 2px solid #5da05d; }
+
+/* Small bars — hide role, reduce company font */
+.tl-bar-sm .tl-bar-company { font-size: 11px; }
+
+/* Point events (single-date entries) — horizontal tag style */
+.tl-bar-point {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  opacity: 0.85;
+}
+.tl-bar-point.tl-bar-exp { border-color: var(--color-text-1); }
+.tl-bar-point.tl-bar-edu { border-color: #5b8fcc; }
+.tl-bar-point.tl-bar-proj { border-color: #5da05d; }
+.tl-bar-point .tl-bar-company { font-size: 11px; font-style: italic; }
+
+/* ── Group column headers ───────────────────────────────────────────── */
+.tl-group-header {
+  position: absolute;
+  top: 10px;
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  opacity: 0.75;
+}
+.tl-group-edu  { color: #5b8fcc; }
+.tl-group-exp  { color: var(--color-text-2); }
+.tl-group-proj { color: #5da05d; }
+
+/* ── Legend ─────────────────────────────────────────────────────────── */.tl-legend {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.tl-legend-item {
+  font-family: var(--font-mono, monospace);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tl-legend-item::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+}
+.tl-legend-edu::before  { background: #5b8fcc; }
+.tl-legend-exp::before  { background: var(--color-text-1); }
+.tl-legend-proj::before { background: #5da05d; }
+
+/* ═══════════════════════════════════════════════════════════════════
+   HORIZONTAL (Gantt) timeline — /timeline route
+   ═══════════════════════════════════════════════════════════════════ */
+
+.tl-h-wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 32px 16px;
+  background: var(--color-surface);
+  border-bottom: 0.5px solid var(--color-border);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.tl-h-wrap::-webkit-scrollbar {
+  height: 4px;
+}
+.tl-h-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+.tl-h-wrap::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 2px;
+}
+.tl-h-wrap::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-3);
+}
+
+.tl-h-container {
+  position: relative;
+  min-width: 100%;
+}
+
+/* Vertical gridline per year */
+.tl-htick {
+  position: absolute;
+  width: 1px;
+  background: var(--color-border);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.tl-htick-hoy {
+  background: var(--color-text-2);
+  opacity: 0.7;
+}
+
+/* Year label at top */
+.tl-hyear-label {
+  position: absolute;
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  color: var(--color-text-3);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  pointer-events: none;
+  letter-spacing: 0.03em;
+}
+
+/* Group horizontal rule */
+.tl-hgroup-rule {
+  position: absolute;
+  right: 0;
+  height: 1px;
+  background: var(--color-border);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Group label on the left side */
+.tl-hgroup-label {
+  position: absolute;
+  left: 0;
+  width: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border-right: 1px solid var(--color-border);
+  box-sizing: border-box;
+}
+
+/* Override bar text sizes for horizontal layout */
+.tl-h-container .tl-bar {
+  padding: 3px 5px;
+  border-radius: 2px;
+  justify-content: center;
+}
+.tl-h-container .tl-bar-company {
+  font-size: 11px;
+  line-height: 1.3;
+}
+.tl-h-container .tl-bar-role {
+  font-size: 10px;
+  line-height: 1.2;
+}
+.tl-h-container .tl-bar-point .tl-bar-company {
+  font-size: 10px;
+}
+

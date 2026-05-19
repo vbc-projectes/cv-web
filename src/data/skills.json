@@ -1,0 +1,14 @@
+[
+  { "id": "python",       "name": "Python",             "level": 5, "category": { "es": "Datos & ML",   "en": "Data & ML"  } },
+  { "id": "ml",           "name": "Machine Learning",   "level": 4, "category": { "es": "Datos & ML",   "en": "Data & ML"  } },
+  { "id": "databricks",   "name": "Azure Databricks",   "level": 3, "category": { "es": "Datos & ML",   "en": "Data & ML"  } },
+  { "id": "matlab",       "name": "MATLAB",             "level": 3, "category": { "es": "Datos & ML",   "en": "Data & ML"  } },
+  { "id": "azure",        "name": "Azure / AKS",        "level": 3, "category": { "es": "Cloud & DevOps", "en": "Cloud & DevOps" } },
+  { "id": "kubernetes",   "name": "Kubernetes",         "level": 3, "category": { "es": "Cloud & DevOps", "en": "Cloud & DevOps" } },
+  { "id": "linux",        "name": "Linux / Unix",       "level": 4, "category": { "es": "Cloud & DevOps", "en": "Cloud & DevOps" } },
+  { "id": "cloudflare",   "name": "Cloudflare Tunnel",  "level": 3, "category": { "es": "Cloud & DevOps", "en": "Cloud & DevOps" } },
+  { "id": "arcgis",       "name": "ArcGIS",             "level": 3, "category": { "es": "GIS & Ciencia",  "en": "GIS & Science" } },
+  { "id": "qgis",         "name": "QGIS",               "level": 3, "category": { "es": "GIS & Ciencia",  "en": "GIS & Science" } },
+  { "id": "git",          "name": "Git / GitHub",       "level": 4, "category": { "es": "Herramientas",  "en": "Tools"        } },
+  { "id": "ssh",          "name": "SSH",                "level": 4, "category": { "es": "Herramientas",  "en": "Tools"        } }
+]

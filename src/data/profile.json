@@ -1,0 +1,25 @@
+{
+  "name": "Carlos Pacheco Perelló",
+  "title": { "es": "Data Engineer & Científico de Datos", "en": "Data Engineer & Data Scientist" },
+  "subtitle": { "es": "Física · Datos · Machine Learning", "en": "Physics · Data · Machine Learning" },
+  "bio": {
+    "es": "Graduado en Física, actualmente cursando un Máster en Física Avanzada y Matemática Aplicada, con orientación en el tratamiento de imágenes y datos mediante técnicas de Machine Learning, así como en la simulación de fluidos. Interesado en la programación, la ciencia de datos y la oceanografía.",
+    "en": "Physics graduate, currently pursuing a Master's in Advanced Physics and Applied Mathematics, focused on image and data processing with Machine Learning techniques, as well as fluid simulation. Interested in programming, data science and oceanography."
+  },
+  "location": "Palma de Mallorca, ES",
+  "stats": [
+    { "label": { "es": "Años exp.", "en": "Years exp." }, "value": "1+" },
+    { "label": { "es": "Proyectos", "en": "Projects" }, "value": "5+" }
+  ],
+  "tags": ["Python", "Machine Learning", "Data Engineering", "Azure", "Física"],
+  "contact": [
+    { "type": "Email",    "value": "cpacheco.perello@gmail.com",       "href": "mailto:cpacheco.perello@gmail.com",                          "icon": "mail" },
+    { "type": "LinkedIn", "value": "/in/carlospacheco-perello",       "href": "https://linkedin.com/in/carlospacheco-perello",              "icon": "brand-linkedin" },
+    { "type": "GitHub",   "value": "@cpacheco-perello",               "href": "https://github.com/cpacheco-perello",                        "icon": "brand-github" }
+  ],
+  "languages": [
+    { "name": { "es": "Español",  "en": "Spanish" }, "level": { "es": "Nativo",           "en": "Native"          } },
+    { "name": { "es": "Catalán",  "en": "Catalan" }, "level": { "es": "Nativo",           "en": "Native"          } },
+    { "name": { "es": "Inglés",   "en": "English" }, "level": { "es": "Profesional · C2", "en": "Professional · C2" } }
+  ]
+}
