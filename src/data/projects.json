@@ -1,4 +1,25 @@
-[
+[  {
+    "id": "tfg-uib",
+    "position": 11,
+    "current": false,
+    "period": "mar. 2024 — sept. 2024",
+    "title": "Trabajo de Fin de Grado – UIB",
+    "image": "https://placehold.co/280x220/1e3a5f/a0bcd4?text=Data+Space",
+    "summary": {
+      "es": "Data Space turístico para Baleares · Azure AKS · SIMPL-OPEN",
+      "en": "Tourism Data Space for Balearic Islands · Azure AKS · SIMPL-OPEN"
+    },
+    "description": {
+      "es": "Despliegue del Data Space turístico para las Islas Baleares basado en arquitectura SIMPL-OPEN, en el marco del proyecto Spain Living Lab. Infraestructura en Azure Kubernetes Service.",
+      "en": "Deployment of the tourism Data Space for the Balearic Islands based on SIMPL-OPEN architecture, within the Spain Living Lab project. Infrastructure on Azure Kubernetes Service."
+    },
+    "details": {
+      "es": ["Infraestructura desplegada en Azure Kubernetes Service (AKS)", "Validación local y Cloudflare Tunnel para adhesión de entidades", "Modelos de forecasting con Machine Learning en Azure Databricks", "Desarrollo de indicadores turísticos e KPIs"],
+      "en": ["Infrastructure deployed on Azure Kubernetes Service (AKS)", "Local validation and Cloudflare Tunnel for entity onboarding", "Forecasting models with Machine Learning on Azure Databricks", "Tourism indicator and KPI development"]
+    },
+    "tags": ["Azure AKS", "Kubernetes", "SIMPL-OPEN", "Databricks", "ML", "Cloudflare Tunnel"],
+    "repo": "https://github.com/cpacheco-perello"
+  },
   {
     "id": "spain-living-lab",
     "position": 10,
