@@ -1,0 +1,16 @@
+{
+  "id": "uib-master",
+  "period": "oct.2025 — Presente",
+  "degree": { "es": "Máster en Física Avanzada y Matemática Aplicada", "en": "M.Sc. Advanced Physics and Applied Mathematics" },
+  "institution": "Universitat de les Illes Balears",
+  "summary": {
+    "es": "Machine Learning aplicado · Simulación de fluidos · Tratamiento de imágenes",
+    "en": "Applied Machine Learning · Fluid simulation · Image processing"
+  },
+  "description": {
+    "es": "Máster con itinerario en análisis de datos, machine learning, procesamiento de imágenes mediante deep learning, tratamiento de datos y simulación de fluidos geofísicos.",
+    "en": "Master's degree with a focus on data analysis, machine learning, image processing via deep learning, data treatment and geophysical fluid simulation."
+  },
+  "tags": ["Machine Learning", "Deep Learning", "Física Computacional", "Simulación", "Matemática Aplicada"],
+  "stacks": [1]
+}

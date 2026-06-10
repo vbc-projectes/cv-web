@@ -1,0 +1,16 @@
+{
+  "id": "socib-campanya",
+  "period": "mar. 2023",
+  "degree": { "es": "Campaña Oceanográfica con el SOCIB", "en": "Oceanographic Campaign with SOCIB" },
+  "institution": "Universitat de les Illes Balears · SOCIB",
+  "summary": {
+    "es": "Toma de datos oceanográficos en el mar Mediterráneo",
+    "en": "Oceanographic data collection in the Mediterranean Sea"
+  },
+  "description": {
+    "es": "Participación en campaña oceanográfica a bordo de embarcación del SOCIB (Sistema d'Observació Costaner de les Illes Balears) para la toma de datos en el mar Mediterráneo.",
+    "en": "Participation in an oceanographic campaign aboard a SOCIB vessel for data collection in the Mediterranean Sea."
+  },
+  "tags": ["Oceanografía", "SOCIB", "Trabajo de campo"],
+  "stacks": []
+}

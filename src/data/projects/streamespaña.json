@@ -1,0 +1,32 @@
+{
+  "id": "streamespana",
+  "position": 10,
+  "current": false,
+  "period": "feb. 2026 — Presente",
+  "title": "StreamWithVPN",
+  "image": "images/Streamespana.png",
+  "summary": {
+    "es": "App de listas de películas por plataforma y país · React · TypeScript · Tailwind CSS",
+    "en": "Movie list app by platform and country · React · TypeScript · Tailwind CSS"
+  },
+  "description": {
+    "es": "Aplicación web para descubrir dónde ver películas según tu país o VPN, crear listas personalizadas, comentar, jugar trivia y organizar visionados en grupo con amigos.",
+    "en": "Web app to discover where to watch movies by country or VPN, create personal lists, leave comments, play trivia, and organize group viewings with friends."
+  },
+  "details": {
+    "es": [
+      "Búsqueda de disponibilidad de películas por plataforma y país para uso con VPN",
+      "Listas personalizadas, comentarios y trivia sobre películas",
+      "Grupos para planear visionados en común con amigos"
+    ],
+    "en": [
+      "Movie availability search by platform and country for VPN use",
+      "Personal lists, comments, and movie trivia",
+      "Groups to plan shared viewings with friends"
+    ]
+  },
+  "tags": ["React", "TypeScript", "Tailwind CSS", "Firebase", "Movies", "VPN", "Groups"],
+  "stacks": [1, 15, 16, 17, 18],
+  "link": "https://streamwithvpn.web.app/",
+  "repo": "https://github.com/cpacheco-perello"
+}

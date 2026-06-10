@@ -1,0 +1,26 @@
+{
+  "items": [
+    { "id": 1, "name": "Python" },
+    { "id": 2, "name": "Azure" },
+    { "id": 3, "name": "Azure Databricks" },
+    { "id": 4, "name": "Azure Kubernetes Service (AKS)" },
+    { "id": 5, "name": "Kubernetes" },
+    { "id": 6, "name": "SIMPL-OPEN" },
+    { "id": 7, "name": "Cloudflare Tunnel" },
+    { "id": 8, "name": "Linux" },
+    { "id": 9, "name": "Bash" },
+    { "id": 10, "name": "Pandas" },
+    { "id": 11, "name": "ArcGIS" },
+    { "id": 12, "name": "QGIS" },
+    { "id": 13, "name": "LaTeX" },
+    { "id": 14, "name": "SSH" },
+    { "id": 15, "name": "Firebase" },
+    { "id": 16, "name": "Backblaze B2" },
+    { "id": 17, "name": "API AEMET" },
+    { "id": 18, "name": "Render" },
+    { "id": 19, "name": "LabVIEW" },
+    { "id": 20, "name": "COMSOL Multiphysics" },
+    { "id": 21, "name": "Docker" },
+    { "id": 22, "name": "MATLAB" }
+  ]
+}

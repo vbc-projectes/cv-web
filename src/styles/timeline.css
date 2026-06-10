@@ -72,23 +72,23 @@
 }
 
 .tl-bar-0 {
-  border-left: 2px solid var(--color-text-1);
+  border-left: 2px solid var(--color-accent);
 }
 
 .tl-bar-1 {
-  border-left: 2px solid var(--color-text-3);
+  border-left: 2px solid var(--color-blue);
 }
 
 .tl-bar-2 {
-  border-left: 2px solid var(--color-text-2);
+  border-left: 2px solid var(--color-green);
 }
 
 .tl-bar-3 {
-  border-left: 2px solid var(--color-text-3);
+  border-left: 2px solid var(--color-warm);
 }
 
 .tl-year-hoy {
-  color: var(--color-text-1) !important;
+  color: var(--color-accent) !important;
   font-weight: 500;
 }
 
@@ -117,9 +117,9 @@
 }
 
 /* ── Type differentiation ───────────────────────────────────────────── */
-.tl-bar-exp  { border-left: 2px solid var(--color-text-1); }
-.tl-bar-edu  { border-left: 2px solid #5b8fcc; }
-.tl-bar-proj { border-left: 2px solid #5da05d; }
+.tl-bar-exp  { border-left: 2px solid var(--color-accent); }
+.tl-bar-edu  { border-left: 2px solid var(--color-blue); }
+.tl-bar-proj { border-left: 2px solid var(--color-green); }
 
 /* Small bars — hide role, reduce company font */
 .tl-bar-sm .tl-bar-company { font-size: 11px; }
@@ -131,9 +131,9 @@
   border-right: 1px solid;
   opacity: 0.85;
 }
-.tl-bar-point.tl-bar-exp { border-color: var(--color-text-1); }
-.tl-bar-point.tl-bar-edu { border-color: #5b8fcc; }
-.tl-bar-point.tl-bar-proj { border-color: #5da05d; }
+.tl-bar-point.tl-bar-exp { border-color: var(--color-accent); }
+.tl-bar-point.tl-bar-edu { border-color: var(--color-blue); }
+.tl-bar-point.tl-bar-proj { border-color: var(--color-green); }
 .tl-bar-point .tl-bar-company { font-size: 11px; font-style: italic; }
 
 /* ── Group column headers ───────────────────────────────────────────── */
@@ -151,9 +151,9 @@
   pointer-events: none;
   opacity: 0.75;
 }
-.tl-group-edu  { color: #5b8fcc; }
-.tl-group-exp  { color: var(--color-text-2); }
-.tl-group-proj { color: #5da05d; }
+.tl-group-edu  { color: var(--color-blue); }
+.tl-group-exp  { color: var(--color-accent); }
+.tl-group-proj { color: var(--color-green); }
 
 /* ── Legend ─────────────────────────────────────────────────────────── */.tl-legend {
   display: flex;
@@ -175,36 +175,57 @@
   height: 2px;
   border-radius: 1px;
 }
-.tl-legend-edu::before  { background: #5b8fcc; }
-.tl-legend-exp::before  { background: var(--color-text-1); }
-.tl-legend-proj::before { background: #5da05d; }
+.tl-legend-edu::before  { background: var(--color-blue); }
+.tl-legend-exp::before  { background: var(--color-accent); }
+.tl-legend-proj::before { background: var(--color-green); }
 
 /* ═══════════════════════════════════════════════════════════════════
    HORIZONTAL (Gantt) timeline — /timeline route
    ═══════════════════════════════════════════════════════════════════ */
 
-.tl-h-wrap {
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 0 32px 16px;
+.tl-gantt-outer {
+  display: flex;
+  align-items: flex-start;
   background: var(--color-surface);
   border-bottom: 0.5px solid var(--color-border);
+}
+
+.tl-label-col {
+  width: 92px;
+  flex-shrink: 0;
+  position: relative;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  z-index: 5;
+}
+
+.tl-label-col .tl-hgroup-label {
+  border-right: none;
+  width: 88px;
+}
+
+.tl-h-wrap {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 32px 16px 8px;
+  background: var(--color-surface);
   scrollbar-width: thin;
-  scrollbar-color: var(--color-border) transparent;
+  scrollbar-color: var(--color-text-3) var(--color-border);
 }
 
 .tl-h-wrap::-webkit-scrollbar {
   height: 4px;
 }
 .tl-h-wrap::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--color-border);
 }
 .tl-h-wrap::-webkit-scrollbar-thumb {
-  background: var(--color-border);
+  background: var(--color-text-3);
   border-radius: 2px;
 }
 .tl-h-wrap::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text-3);
+  background: var(--color-text-2);
 }
 
 .tl-h-container {
@@ -270,6 +291,7 @@
   padding: 3px 5px;
   border-radius: 2px;
   justify-content: center;
+  background: var(--color-surface);
 }
 .tl-h-container .tl-bar-company {
   font-size: 11px;

@@ -17,7 +17,7 @@ export default function Nav() {
   const { lang, setLang } = useLang()
   const [dark, toggleDark] = useDarkMode()
   const navigate = useNavigate()
-  const links = ['home', 'experiencia', 'estudios', 'proyectos', 'timeline']
+  const links = ['home', 'experiencia', 'estudios', 'proyectos']
 
   return (
     <nav className="nav">

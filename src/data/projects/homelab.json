@@ -1,0 +1,33 @@
+{
+  "id": "homelab",
+  "position": 13,
+  "current": false,
+  "period": "may. 2026 — Presente",
+  "title": "Homelab",
+  "image": "https://placehold.co/280x220/1e3a5f/a0bcd4?text=Homelab",
+  "summary": {
+    "es": "Servidor doméstico · Contenedores · Virtualización · Cloudflare Tunnel",
+    "en": "Home server · Containers · Virtualization · Cloudflare Tunnel"
+  },
+  "description": {
+    "es": "Despliegue y administración de un servidor doméstico con servicios en contenedores Docker, virtualización de entornos, túneles Cloudflare para exposición segura, y automatización de infraestructura.",
+    "en": "Deployment and administration of a home server with Docker containers, environment virtualization, Cloudflare tunnels for secure exposure, and infrastructure automation."
+  },
+  "details": {
+    "es": [
+      "Administración de servidor Linux con servicios contenerizados",
+      "Virtualización de entornos de desarrollo y pruebas",
+      "Túneles Cloudflare para exposición segura de servicios",
+      "Automatización de infraestructura con scripts y contenedores"
+    ],
+    "en": [
+      "Linux server administration with containerized services",
+      "Development and testing environment virtualization",
+      "Cloudflare tunnels for secure service exposure",
+      "Infrastructure automation with scripts and containers"
+    ]
+  },
+  "tags": ["Docker", "Linux", "Cloudflare Tunnel", "Virtualización", "Self-hosting", "Infraestructura"],
+  "stacks": [7, 8, 21],
+  "repo": "https://github.com/cpacheco-perello"
+}

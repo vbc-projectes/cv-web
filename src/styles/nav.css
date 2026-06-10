@@ -37,7 +37,7 @@
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--color-text-1);
+  color: var(--color-accent);
 }
 
 .nav-controls {

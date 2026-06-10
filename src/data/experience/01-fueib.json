@@ -1,0 +1,38 @@
+{
+"id": "fueib",
+"period": "oct. 2025 — jun. 2026",
+"company": "Fundació Universitat-Empresa de les Illes Balears (FUEIB)",
+"role": "Ingeniero de Espacios de Datos / Científico de Datos",
+"summary": {
+"es": "Espacio de datos turístico federado · Data Engineering · Machine Learning",
+"en": "Federated tourism data space · Data Engineering · Machine Learning"
+},
+"description": {
+"es": "Diseño, implementación y evaluación de una arquitectura federada de intercambio de datos basada en estándares europeos para el espacio turístico de las Islas Baleares. Desarrollo de pipelines de datos, modelos predictivos e indicadores analíticos sobre datos operativos del sector turístico, desplegados sobre infraestructura cloud en Azure.",
+"en": "Design, implementation and evaluation of a federated data exchange architecture based on European standards for the Balearic Islands tourism data space. Development of data pipelines, forecasting models and analytical indicators using operational tourism data, deployed on Azure cloud infrastructure."
+},
+"responsibilities": {
+"es": [
+"Implementación y validación de una arquitectura federada de intercambio de datos basada en SIMPL-OPEN",
+"Desarrollo de pipelines ETL y procesos de validación de datos en Python",
+"Construcción de modelos de forecasting e indicadores mediante técnicas de Machine Learning",
+"Despliegue y gestión de infraestructura cloud sobre Azure Kubernetes Service (AKS)"
+],
+"en": [
+"Implementation and validation of a federated data exchange architecture based on SIMPL-OPEN",
+"Development of ETL pipelines and data validation processes in Python",
+"Building forecasting models and indicators using Machine Learning techniques",
+"Deployment and management of cloud infrastructure on Azure Kubernetes Service (AKS)"
+
+]
+},
+"tags": [
+"Data Engineering",
+"Machine Learning",
+"Data Spaces",
+"Cloud Computing",
+"Forecasting",
+"Turism Analytics"
+],
+"stacks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 14]
+}

@@ -26,4 +26,5 @@ export const ui = {
   degrees:          { es: 'títulos',              en: 'degrees' },
   projectsLabel:    { es: 'proyectos',            en: 'projects' },
   location:         { es: 'Ubicación',            en: 'Location' },
+  pdfDocument:      { es: 'Documento PDF',        en: 'PDF Document' },
 }

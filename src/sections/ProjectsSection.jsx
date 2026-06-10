@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import '../styles/projects.css'
-import projects from '../data/projects.json'
+import { projects } from '../data/index.js'
 import ProjectCard from '../templates/ProjectCard'
 import { useLang, t } from '../context/LangContext'
 import { ui } from '../i18n/ui'

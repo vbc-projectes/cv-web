@@ -1,0 +1,17 @@
+{
+  "id": "imedea",
+  "period": "ene. 2025 — abr. 2025",
+  "degree": { "es": "Prácticas Universitarias · Oceanografía", "en": "University Internship · Physical Oceanography" },
+  "institution": "IMEDEA – Institut Mediterrani d'Estudis Avançats",
+  "link": "https://cpacheco-perello.github.io/Practicas_Oceonografia_IMEDEA/",
+  "summary": {
+    "es": "Análisis de vórtices en el Mediterráneo · MATLAB · GitHub Pages",
+    "en": "Mediterranean vortex analysis · MATLAB · GitHub Pages"
+  },
+  "description": {
+    "es": "Estudio de evolución de vórtices en el Mediterráneo utilizando MATLAB. Elaboración de página GitHub recopilatoria de resultados.",
+    "en": "Study of vortex evolution in the Mediterranean using MATLAB. Development of a GitHub Pages repository of results."
+  },
+  "tags": ["MATLAB", "Oceanografía", "GitHub Pages"],
+  "stacks": [22]
+}

@@ -7,13 +7,27 @@
   display: flex;
   gap: 0;
   overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-text-3) transparent;
   border-bottom: 0.5px solid var(--color-border);
+  padding-bottom: 4px;
 }
 
 .projects-scroll-track::-webkit-scrollbar {
-  display: none;
+  height: 3px;
+}
+
+.projects-scroll-track::-webkit-scrollbar-track {
+  background: var(--color-border);
+}
+
+.projects-scroll-track::-webkit-scrollbar-thumb {
+  background: var(--color-text-3);
+  border-radius: 2px;
+}
+
+.projects-scroll-track::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-2);
 }
 
 .proj-card {
@@ -35,7 +49,7 @@
 }
 
 .proj-card:hover {
-  background: var(--color-bg);
+  background: var(--color-accent-soft);
 }
 
 .proj-card-preview {
@@ -98,64 +112,8 @@
 
 .proj-card-arrow {
   font-size: 16px;
-  color: var(--color-text-3);
-  transition: transform 0.15s;
-}
-
-.proj-card:hover .proj-card-arrow {
-  transform: translateX(3px);
-}
-
-.scroll-hint {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 24px;
-  font-size: 11px;
-  color: var(--color-text-3);
-  letter-spacing: 0.04em;
-  border-top: 0.5px solid var(--color-border);
-}
-
-.proj-card-pos {
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  color: var(--color-text-3);
-  margin-bottom: 8px;
-}
-
-.proj-card-title {
-  font-family: var(--font-display);
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: -0.3px;
-  line-height: 1.1;
-}
-
-.proj-card-desc {
-  font-size: 12px;
-  color: var(--color-text-2);
-  line-height: 1.5;
-  margin: 16px 0;
-  flex: 1;
-}
-
-.proj-card-footer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.proj-card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-
-.proj-card-arrow {
-  font-size: 16px;
-  color: var(--color-text-3);
-  transition: transform 0.15s;
+  color: var(--color-accent);
+  transition: transform 0.15s, color 0.15s;
 }
 
 .proj-card:hover .proj-card-arrow {

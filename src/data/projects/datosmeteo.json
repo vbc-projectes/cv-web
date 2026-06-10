@@ -1,0 +1,32 @@
+{
+  "id": "datosmeteo",
+  "position": 12,
+  "current": false,
+  "period": "ene. 2024 — Presente",
+  "title": "DatosMeteo",
+  "image": "images/DatosMeteo.png",
+  "summary": {
+    "es": "Plataforma de datos meteorológicos · AEMET · Firebase · Backblaze B2",
+    "en": "Meteorological data platform · AEMET · Firebase · Backblaze B2"
+  },
+  "description": {
+    "es": "Plataforma de descarga y visualización de datos meteorológicos de la AEMET. Arquitectura desplegada en entorno cloud (GitHub + Render) con base de datos Firebase y almacenamiento en Backblaze B2.",
+    "en": "Platform for downloading and visualizing meteorological data from AEMET. Architecture deployed in a cloud environment (GitHub + Render) with Firebase database and Backblaze B2 storage."
+  },
+  "details": {
+    "es": [
+      "Descarga y visualización de datos meteorológicos de la AEMET",
+      "Arquitectura cloud desplegada en GitHub + Render",
+      "Base de datos Firebase y almacenamiento en Backblaze B2"
+    ],
+    "en": [
+      "AEMET meteorological data download and visualization",
+      "Cloud architecture deployed on GitHub + Render",
+      "Firebase database and Backblaze B2 storage"
+    ]
+  },
+  "tags": ["Python", "Firebase", "Backblaze B2", "AEMET", "Render", "Cloud"],
+  "stacks": [1, 15, 16, 17, 18],
+  "link": "https://datosmeteo.com/",
+  "repo": "https://github.com/cpacheco-perello"
+}

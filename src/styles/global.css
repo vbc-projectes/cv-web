@@ -9,6 +9,16 @@
   --color-text-1: #111110;
   --color-text-2: #6b6b68;
   --color-text-3: #9e9e9a;
+  --color-grid:   rgba(0,0,0,0.055);
+  --color-accent:        #5b6ef0;
+  --color-accent-soft:   rgba(91, 110, 240, 0.07);
+  --color-accent-border: rgba(91, 110, 240, 0.22);
+  --color-warm:          #d97348;
+  --color-warm-soft:     rgba(217, 115, 72, 0.07);
+  --color-blue:          #4a8fd9;
+  --color-blue-soft:     rgba(74, 143, 217, 0.08);
+  --color-green:         #3d9e57;
+  --color-green-soft:    rgba(61, 158, 87, 0.08);
 }
 
 :root.dark {
@@ -18,12 +28,26 @@
   --color-text-1: #f0f0ee;
   --color-text-2: #a0a09c;
   --color-text-3: #6b6b68;
+  --color-grid:   rgba(255,255,255,0.04);
+  --color-accent:        #818cf8;
+  --color-accent-soft:   rgba(129, 140, 248, 0.1);
+  --color-accent-border: rgba(129, 140, 248, 0.2);
+  --color-warm:          #fb923c;
+  --color-warm-soft:     rgba(251, 146, 60, 0.09);
+  --color-blue:          #60a5fa;
+  --color-blue-soft:     rgba(96, 165, 250, 0.08);
+  --color-green:         #4ade80;
+  --color-green-soft:    rgba(74, 222, 128, 0.08);
 }
 
 body {
   font-family: var(--font-mono);
   font-size: 13px;
-  background: var(--color-bg);
+  background-color: var(--color-bg);
+  background-image:
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
   color: var(--color-text-1);
   transition: background-color 0.2s, color 0.2s;
 }
@@ -32,6 +56,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .tag {
@@ -39,15 +66,15 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 3px 8px;
-  border: 0.5px solid rgba(0,0,0,0.15);
+  border: 0.5px solid var(--color-accent-border);
   border-radius: 2px;
-  color: var(--color-text-2);
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
   font-family: var(--font-mono);
 }
 
 .section-gap {
   height: 32px;
-  background: var(--color-bg);
   border-top: 0.5px solid var(--color-border);
   border-bottom: 0.5px solid var(--color-border);
 }
@@ -58,6 +85,7 @@ body {
   align-items: baseline;
   padding: 24px 32px 18px;
   border-bottom: 0.5px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
   background: var(--color-surface);
 }
 
@@ -71,13 +99,15 @@ body {
 .section-count {
   font-size: 11px;
   letter-spacing: 0.08em;
-  color: var(--color-text-3);
+  color: var(--color-accent);
   text-transform: uppercase;
   cursor: pointer;
+  opacity: 0.65;
+  transition: opacity 0.15s;
 }
 
 .section-count:hover {
-  color: var(--color-text-2);
+  opacity: 1;
 }
 
 .section-list {

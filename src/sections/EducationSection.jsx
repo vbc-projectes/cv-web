@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import education from '../data/education.json'
+import { education } from '../data/index.js'
 import EducationRow from '../templates/EducationRow'
 import { useLang, t } from '../context/LangContext'
 import { ui } from '../i18n/ui'

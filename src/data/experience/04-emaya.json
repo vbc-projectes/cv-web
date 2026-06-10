@@ -1,0 +1,30 @@
+{
+"id": "emaya",
+"period": "nov. 2024 — may. 2025",
+"company": "EMAYA, S.A.",
+"role": "Prácticas · Departament d'Estratègia i Desenvolupament",
+"summary": {
+"es": "Análisis hidrológico y geoespacial para la planificación de infraestructuras de aguas regeneradas",
+"en": "Hydrological and geospatial analysis for reclaimed water infrastructure planning"
+},
+"description": {
+"es": "Participación en proyectos de planificación y gestión de recursos hídricos mediante análisis de datos hidrológicos, investigación normativa y desarrollo de cartografía GIS para infraestructuras de aguas regeneradas en Mallorca.",
+"en": "Contributed to water resource planning and management projects through hydrological data analysis, regulatory research, and GIS cartography development for reclaimed water infrastructure in Mallorca."
+},
+"responsibilities": {
+"es": [
+"Análisis y procesamiento de series pluviométricas con Python para la caracterización y correlación de eventos de lluvia",
+"Investigación del marco normativo aplicable a la reutilización de aguas regeneradas y elaboración de documentación técnica",
+"Diseño preliminar de infraestructuras de conexión a la red de aguas regeneradas mediante ArcGIS",
+"Desarrollo de cartografía temática e hidrológica de Mallorca utilizando QGIS"
+],
+"en": [
+"Analysis and processing of rainfall time series using Python for rainfall characterization and correlation studies",
+"Research on reclaimed water regulations and preparation of technical documentation",
+"Preliminary design of reclaimed water network connection infrastructure using ArcGIS",
+"Development of thematic and hydrological maps of Mallorca using QGIS"
+]
+},
+"tags": [ "GIS", "Análisis de Datos", "Aguas Regeneradas", "Cartografía", "Planificación Hidráulica"],
+"stacks": [1, 10, 11, 12, 13]
+}

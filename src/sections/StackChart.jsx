@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../styles/stackchart.css'
-import experiences from '../data/experience.json'
+import { experiences, education, projects, stacks } from '../data/index.js'
 import { useLang } from '../context/LangContext'
 
 const DEFAULT_VISIBLE = 6
@@ -24,13 +24,6 @@ function parseDecimalYear(str) {
   return parseFloat(s) || 0
 }
 
-function parseDurationMonths(period) {
-  const [a, b] = period.split(' \u2014 ')
-  const start = parseDecimalYear(a)
-  const end = parseDecimalYear(b)
-  return Math.max(1, Math.round((end - start) * 12))
-}
-
 function fmtDuration(months, lang) {
   if (months >= 12) {
     const y = Math.round(months / 12)
@@ -43,12 +36,28 @@ export default function StackChart() {
   const { lang } = useLang()
   const [expanded, setExpanded] = useState(false)
 
-  const tagMonths = {}
-  experiences.forEach(exp => {
-    const months = parseDurationMonths(exp.period)
-    exp.tags.forEach(tag => {
-      tagMonths[tag] = (tagMonths[tag] || 0) + months
+  const stackLookup = Object.fromEntries(stacks.map(s => [s.id, s.name]))
+
+  const stackSpans = {}
+  const allEntries = [...experiences, ...education, ...projects]
+  allEntries.forEach(entry => {
+    const parts = entry.period.split(' \u2014 ')
+    if (parts.length < 2) return
+    const start = parseDecimalYear(parts[0])
+    const end = parseDecimalYear(parts[1])
+    ;(entry.stacks ?? []).forEach(id => {
+      if (!stackSpans[id]) stackSpans[id] = { min: start, max: end }
+      else {
+        if (start < stackSpans[id].min) stackSpans[id].min = start
+        if (end > stackSpans[id].max) stackSpans[id].max = end
+      }
     })
+  })
+
+  const tagMonths = {}
+  Object.entries(stackSpans).forEach(([id, { min, max }]) => {
+    const name = stackLookup[id] ?? id
+    tagMonths[name] = Math.max(1, Math.round((max - min) * 12))
   })
 
   const sorted = Object.entries(tagMonths)

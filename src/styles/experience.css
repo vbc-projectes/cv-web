@@ -11,7 +11,7 @@
 }
 
 .exp-row:hover {
-  background: var(--color-bg);
+  background: var(--color-accent-soft);
 }
 
 .exp-period {
@@ -51,6 +51,7 @@
 
 .exp-row:hover .exp-arrow {
   transform: translateX(3px);
+  color: var(--color-accent);
 }
 
 @media (max-width: 600px) {

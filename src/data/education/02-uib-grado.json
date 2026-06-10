@@ -1,0 +1,16 @@
+{
+  "id": "uib-grado",
+  "period": "sep.2018 — jun.2025",
+  "degree": { "es": "Grado de Física", "en": "B.Sc. Physics" },
+  "institution": "Universitat de les Illes Balears",
+  "summary": {
+    "es": "Física teórica y experimental · Programación científica",
+    "en": "Theoretical and experimental physics · Scientific programming"
+  },
+  "description": {
+    "es": "Formación en física teórica y experimental, con fuerte componente en programación científica con Python y MATLAB. TFG (9,5/10): \"Caracterización experimental de un dispositivo de emisión de campo integrado para aplicaciones en microelectrónica de vacío\".",
+    "en": "Education in theoretical and experimental physics, with a strong component in scientific programming with Python and MATLAB. Final Project (9.5/10): \"Experimental characterization of an integrated field emission device for vacuum microelectronics applications\"."
+  },
+  "tags": ["Python", "MATLAB", "Física", "Cálculo", "Estadística"],
+  "stacks": [1, 13, 22]
+}

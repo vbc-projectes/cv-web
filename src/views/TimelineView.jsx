@@ -1,9 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import '../styles/timeline.css'
-import experiences from '../data/experience.json'
-import education from '../data/education.json'
-import projects from '../data/projects.json'
+import { experiences, education, projects } from '../data/index.js'
+import Footer from '../components/Footer'
 import { useLang, t } from '../context/LangContext'
 import { ui } from '../i18n/ui'
 
@@ -97,16 +96,23 @@ export default function TimelineView() {
     range: parsePeriod(p.period),
   }))
 
-  const placedEdu = assignCols(eduItems)
-  const placedExp = assignCols(expItems)
-  const placedProj = assignCols(projItems)
+  const VIEW_START = 2023
+  const clipToView = item => ({ ...item, range: { start: Math.max(item.range.start, VIEW_START), end: item.range.end } })
+
+  const visEdu  = eduItems.filter(e => e.range.end  >= VIEW_START).map(clipToView)
+  const visExp  = expItems.filter(e => e.range.end  >= VIEW_START).map(clipToView)
+  const visProj = projItems.filter(e => e.range.end >= VIEW_START).map(clipToView)
+
+  const placedEdu = assignCols(visEdu)
+  const placedExp = assignCols(visExp)
+  const placedProj = assignCols(visProj)
 
   const numEdu = placedEdu.length ? Math.max(...placedEdu.map(p => p.col)) + 1 : 1
   const numExp = placedExp.length ? Math.max(...placedExp.map(p => p.col)) + 1 : 1
   const numProj = placedProj.length ? Math.max(...placedProj.map(p => p.col)) + 1 : 0
 
-  const all = [...expItems, ...eduItems, ...projItems]
-  const minDecimal = Math.min(...all.map(e => e.range.start))
+  const all = [...visExp, ...visEdu, ...visProj]
+  const minDecimal = VIEW_START
   const maxDecimal = Math.max(...all.map(e => e.range.end))
   const spanMonths = (maxDecimal - minDecimal) * 12
 
@@ -119,10 +125,10 @@ export default function TimelineView() {
   const totalH = (numProj > 0
     ? groupY.proj + HEADER_H + numProj * ROW_H
     : groupY.exp + HEADER_H + numExp * ROW_H) + 24
-  const totalW = LEFT_PAD + Math.ceil(spanMonths + 2) * MONTH_PX + RIGHT_PAD
+  const totalW = Math.ceil(spanMonths + 2) * MONTH_PX + RIGHT_PAD
 
   function decToX(dec) {
-    return LEFT_PAD + (dec - minDecimal) * 12 * MONTH_PX
+    return (dec - minDecimal) * 12 * MONTH_PX
   }
   function barTop(type, col) {
     return groupY[type] + HEADER_H + col * ROW_H + BAR_VOFF
@@ -159,64 +165,73 @@ export default function TimelineView() {
         </div>
       </div>
 
-      <div className="tl-h-wrap" ref={wrapRef}>
-        <div className="tl-h-container" style={{ width: totalW + 'px', height: totalH + 'px' }}>
-
-          {/* Vertical year gridlines */}
-          {yearTicks.map(y => (
-            <div key={'tick' + y} className="tl-htick"
-              style={{ left: decToX(y) + 'px', top: AXIS_TOP + 'px', height: (totalH - AXIS_TOP) + 'px' }} />
-          ))}
-
-          {/* Year labels at top */}
-          {yearTicks.map(y => (
-            <span key={'lbl' + y} className="tl-hyear-label"
-              style={{ left: decToX(y) + 'px', top: '8px' }}>{y}</span>
-          ))}
-
-          {/* Hoy marker */}
-          {hasPresente && (
-            <>
-              <div className="tl-htick tl-htick-hoy"
-                style={{ left: presentX + 'px', top: AXIS_TOP + 'px', height: (totalH - AXIS_TOP) + 'px' }} />
-              <span className="tl-hyear-label tl-year-hoy"
-                style={{ left: presentX + 'px', top: '8px' }}>Hoy</span>
-            </>
-          )}
-
-          {/* Group labels + separators */}
+      <div className="tl-gantt-outer">
+        {/* Fixed label column */}
+        <div className="tl-label-col" style={{ height: totalH + 'px' }}>
           {groups.map(type => (
-            <div key={'g' + type}>
-              <div className="tl-hgroup-rule"
-                style={{ top: groupY[type] + 'px', left: LEFT_PAD + 'px' }} />
-              <div className={`tl-hgroup-label tl-group-${type}`}
-                style={{ top: groupY[type] + 'px', height: (HEADER_H + groupRows[type] * ROW_H) + 'px' }}>
-                {groupLabel[type]}
-              </div>
+            <div key={'gl' + type}
+              className={`tl-hgroup-label tl-group-${type}`}
+              style={{ top: groupY[type] + 'px', height: (HEADER_H + groupRows[type] * ROW_H) + 'px' }}>
+              {groupLabel[type]}
             </div>
           ))}
+        </div>
 
-          {/* Bars */}
-          {[...placedEdu, ...placedExp, ...placedProj].map(item => {
-            const x = decToX(item.range.start)
-            const w = Math.max((item.range.end - item.range.start) * 12 * MONTH_PX, 4)
-            const y = barTop(item.type, item.col)
-            const isPoint = item.range.end - item.range.start <= 1 / 12 + 0.001
-            return (
-              <div
-                key={item.type + item.id}
-                className={['tl-bar', `tl-bar-${item.type}`, isPoint ? 'tl-bar-point' : ''].filter(Boolean).join(' ')}
-                style={{ left: x + 'px', top: y + 'px', width: w + 'px', height: BAR_H + 'px' }}
-                title={item.label + (item.sublabel ? ' · ' + item.sublabel : '')}
-                onClick={() => navigate(item.href)}
-              >
-                <span className="tl-bar-company">{item.label}</span>
-                {item.sublabel && <span className="tl-bar-role">{item.sublabel}</span>}
-              </div>
-            )
-          })}
+        {/* Scrollable Gantt */}
+        <div className="tl-h-wrap" ref={wrapRef}>
+          <div className="tl-h-container" style={{ width: totalW + 'px', height: totalH + 'px' }}>
+
+            {/* Vertical year gridlines */}
+            {yearTicks.map(y => (
+              <div key={'tick' + y} className="tl-htick"
+                style={{ left: decToX(y) + 'px', top: AXIS_TOP + 'px', height: (totalH - AXIS_TOP) + 'px' }} />
+            ))}
+
+            {/* Year labels at top */}
+            {yearTicks.map(y => (
+              <span key={'lbl' + y} className="tl-hyear-label"
+                style={{ left: decToX(y) + 'px', top: '8px' }}>{y}</span>
+            ))}
+
+            {/* Hoy marker */}
+            {hasPresente && (
+              <>
+                <div className="tl-htick tl-htick-hoy"
+                  style={{ left: presentX + 'px', top: AXIS_TOP + 'px', height: (totalH - AXIS_TOP) + 'px' }} />
+                <span className="tl-hyear-label tl-year-hoy"
+                  style={{ left: presentX + 'px', top: '8px' }}>Hoy</span>
+              </>
+            )}
+
+            {/* Group separators */}
+            {groups.map(type => (
+              <div key={'g' + type} className="tl-hgroup-rule"
+                style={{ top: groupY[type] + 'px', left: '0' }} />
+            ))}
+
+            {/* Bars */}
+            {[...placedEdu, ...placedExp, ...placedProj].map(item => {
+              const x = decToX(item.range.start)
+              const w = Math.max((item.range.end - item.range.start) * 12 * MONTH_PX, 4)
+              const y = barTop(item.type, item.col)
+              const isPoint = item.range.end - item.range.start <= 1 / 12 + 0.001
+              return (
+                <div
+                  key={item.type + item.id}
+                  className={['tl-bar', `tl-bar-${item.type}`, isPoint ? 'tl-bar-point' : ''].filter(Boolean).join(' ')}
+                  style={{ left: x + 'px', top: y + 'px', width: w + 'px', height: BAR_H + 'px' }}
+                  title={item.label + (item.sublabel ? ' · ' + item.sublabel : '')}
+                  onClick={() => navigate(item.href)}
+                >
+                  <span className="tl-bar-company">{item.label}</span>
+                  {item.sublabel && <span className="tl-bar-role">{item.sublabel}</span>}
+                </div>
+              )
+            })}
+          </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

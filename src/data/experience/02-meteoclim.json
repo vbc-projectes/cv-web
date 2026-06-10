@@ -1,0 +1,33 @@
+{
+"id": "meteoclim",
+"period": "ago. 2025 — oct. 2025",
+"company": "Meteoclim",
+"role": "Técnico y Meteorólogo Junior",
+"summary": {
+"es": "Predicción meteorológica operativa · Monitorización de sistemas",
+"en": "Operational weather forecasting · Systems monitoring"
+},
+"description": {
+"es": "Elaboración de predicciones meteorológicas para medios de comunicación y soporte a operaciones meteorológicas. Supervisión de servidores y plataformas, detección de incidencias y apoyo técnico en proyectos de la división de atmósfera.",
+"en": "Preparation of weather forecasts for media outlets and support for meteorological operations. Monitoring of servers and platforms, incident detection, and technical support for projects within the Atmosphere Division."
+},
+"responsibilities": {
+"es": [
+"Elaboración y actualización de predicciones meteorológicas para medios de comunicación",
+"Monitorización de servidores, plataformas y procesos operativos para la detección y resolución de incidencias",
+"Soporte técnico en tareas y proyectos de la división de atmósfera"
+],
+"en": [
+"Preparation and update of weather forecasts for media outlets",
+"Monitoring of servers, platforms and operational processes for incident detection and resolution",
+"Technical support for tasks and projects within the Atmosphere Division"
+]
+},
+"tags": [
+"Meteorología",
+"Monitorización de Sistemas",
+"Análisis de Datos",
+"Comunicación"
+],
+"stacks": [8, 9, 1,14]
+}

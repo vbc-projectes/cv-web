@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import experiences from '../data/experience.json'
+import { experiences } from '../data/index.js'
 import ExperienceRow from '../templates/ExperienceRow'
 import { useLang, t } from '../context/LangContext'
 import { ui } from '../i18n/ui'

@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import '../styles/timeline.css'
-import experiences from '../data/experience.json'
+import { experiences } from '../data/index.js'
 import { useLang } from '../context/LangContext'
 
 const MONTHS_ES = {

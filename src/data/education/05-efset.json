@@ -1,0 +1,16 @@
+{
+  "id": "efset",
+  "period": "2024",
+  "degree": { "es": "Certificado EF SET Inglés 85/100 (C2 Proficiente)", "en": "EF SET English Certificate 85/100 (C2 Proficient)" },
+  "institution": "EF Standard English Test",
+  "summary": {
+    "es": "Nivel C2 Proficiente · 85/100",
+    "en": "C2 Proficient level · 85/100"
+  },
+  "description": {
+    "es": "Certificación oficial de nivel de inglés C2 Proficiente con puntuación 85/100 en el examen EF SET.",
+    "en": "Official C2 Proficient English level certification with a score of 85/100 on the EF SET exam."
+  },
+  "tags": ["Inglés", "C2", "EF SET"],
+  "stacks": []
+}

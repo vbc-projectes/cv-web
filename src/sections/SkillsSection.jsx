@@ -1,5 +1,5 @@
 import '../styles/skills.css'
-import skills from '../data/skills.json'
+import { skills } from '../data/index.js'
 import { useLang, t } from '../context/LangContext'
 import { ui } from '../i18n/ui'
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import '../styles/hero.css'
 import profile from '../data/profile.json'
-import projects from '../data/projects.json'
+import { projects } from '../data/index.js'
 import { useLang, t } from '../context/LangContext'
 import { ui } from '../i18n/ui'
 

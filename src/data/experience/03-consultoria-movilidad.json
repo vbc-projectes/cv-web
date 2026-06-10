@@ -1,0 +1,37 @@
+{
+"id": "consultoria-movilidad",
+"period": "abr. 2025 — ago. 2025",
+"company": "Meteoclim",
+"role": "Consultor Técnico · Movilidad",
+"summary": {
+"es": "Análisis de movilidad y transporte marítimo para la evaluación del cupo de vehículos en Ibiza",
+"en": "Mobility and maritime transport analysis for the evaluation of the vehicle quota in Ibiza"
+},
+"description": {
+"es": "Desarrollo de consultoría técnica sobre la regulación del cupo de vehículos en Ibiza mediante análisis de datos de movilidad y transporte marítimo. Evaluación de la idoneidad, proporcionalidad e impacto de la medida, con elaboración de un informe técnico utilizado como soporte en un recurso administrativo.",
+"en": "Technical consultancy on Ibiza's vehicle quota regulation through mobility and maritime transport data analysis. Assessment of the measure's suitability, proportionality and impact, including the preparation of a technical report used to support an administrative appeal."
+},
+"responsibilities": {
+"es": [
+"Análisis cuantitativo de la idoneidad y proporcionalidad del sistema de limitación de vehículos",
+"Evaluación del impacto de la medida sobre la movilidad insular y el transporte marítimo mediante análisis de datos",
+"Interpretación de normativa y documentación técnica relacionada con la regulación de la movilidad",
+"Redacción de informe técnico empleado como soporte documental en un procedimiento administrativo"
+],
+"en": [
+"Quantitative assessment of the suitability and proportionality of the vehicle restriction system",
+"Evaluation of the measure's impact on island mobility and maritime transport through data analysis",
+"Review of regulations and technical documentation related to mobility policies",
+"Preparation of a technical report used as supporting documentation in an administrative proceeding"
+]
+},
+"tags": [
+"Movilidad",
+"Análisis de Datos",
+"Transporte Marítimo",
+"Política Pública",
+"Consultoría Técnica",
+"Redacción Técnica"
+],
+"stacks": [1, 13]
+}
