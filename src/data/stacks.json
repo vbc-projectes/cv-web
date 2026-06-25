@@ -21,6 +21,11 @@
     { "id": 19, "name": "LabVIEW" },
     { "id": 20, "name": "COMSOL Multiphysics" },
     { "id": 21, "name": "Docker" },
-    { "id": 22, "name": "MATLAB" }
+    { "id": 22, "name": "MATLAB" },
+    { "id": 23, "name": "TypeScript" },
+    { "id": 24, "name": "React" },
+    { "id": 25, "name": "JavaScript" },
+    { "id": 26, "name": "Electron" },
+    { "id": 27, "name": "SQLite" }
   ]
 }

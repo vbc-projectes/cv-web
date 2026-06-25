@@ -1,0 +1,37 @@
+{
+  "id": "budget-dashboard",
+  "position": 15,
+  "current": true,
+  "period": "ene. 2025 — Presente",
+  "title": "BudgetDashboard",
+  "image": "https://placehold.co/280x220/1e3a1e/7ec87e?text=Budget+Dashboard",
+  "summary": {
+    "es": "Finanzas personales · Electron + SQLite · Docker · Multilingüe",
+    "en": "Personal finance · Electron + SQLite · Docker · Multilingual"
+  },
+  "description": {
+    "es": "Aplicación de escritorio ligera para gestión de finanzas personales. Registra ingresos, gastos, ahorros e inversiones en una base de datos SQLite local, con gráficos de tendencias, más de 18 temas visuales y una interfaz multilingüe (ES, EN, PT, FR, EU, CA).",
+    "en": "Lightweight desktop app for personal finance management. Tracks income, expenses, savings, and investments in a local SQLite database, with trend charts, 18+ visual themes, and a multilingual interface (ES, EN, PT, FR, EU, CA)."
+  },
+  "details": {
+    "es": [
+      "Seguimiento de ingresos, gastos, impuestos, ahorros y \"huchas\" con resúmenes mensuales",
+      "Seguimiento de activos con precios en tiempo real desde Yahoo Finance",
+      "Cuentas con intereses y cálculo automático de rendimientos",
+      "Importación bancaria desde CSV, XLS y XLSX",
+      "Interfaz multilingüe en 6 idiomas y más de 18 temas visuales",
+      "Despliegue con Docker; 40+ releases publicados en GitHub"
+    ],
+    "en": [
+      "Track income, expenses, taxes, savings, and cash buckets with monthly summaries",
+      "Asset tracking with live prices from Yahoo Finance",
+      "Interest-bearing accounts with automatic yield calculations",
+      "Bank import from CSV, XLS, and XLSX files",
+      "Multilingual UI in 6 languages and 18+ visual themes",
+      "Docker deployment; 40+ releases published on GitHub"
+    ]
+  },
+  "tags": ["Electron", "SQLite", "JavaScript", "Docker", "Finanzas", "Desktop App", "Multilingüe"],
+  "stacks": [21, 25, 26, 27],
+  "repo": "https://github.com/vbc-projectes/BudgetDashboard"
+}

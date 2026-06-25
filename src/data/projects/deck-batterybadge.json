@@ -1,0 +1,35 @@
+{
+  "id": "deck-batterybadge",
+  "position": 14,
+  "current": false,
+  "period": "abr. 2025 — abr. 2026",
+  "title": "Deck-BatteryBadge",
+  "image": "https://placehold.co/280x220/1b3a2f/7ec8a0?text=Deck+BatteryBadge",
+  "summary": {
+    "es": "Plugin Steam Deck · Decky Loader · Insignia de batería · TypeScript + Python",
+    "en": "Steam Deck plugin · Decky Loader · Battery badge · TypeScript + Python"
+  },
+  "description": {
+    "es": "Fork del plugin Decky Game Settings para Decky Loader que añade una insignia en la pantalla principal del juego con datos de consumo de batería, y permite calcular la autonomía estimada a partir del consumo en vatios registrado por el plugin battery-tracker.",
+    "en": "Fork of the Decky Game Settings plugin for Decky Loader that adds a badge on the main game screen with battery consumption data, and allows calculating the estimated battery life from the watt consumption tracked by the battery-tracker plugin."
+  },
+  "details": {
+    "es": [
+      "Insignia de batería en la pantalla principal de Steam con datos de rendimiento por juego",
+      "Cálculo de autonomía estimada usando el consumo en vatios del plugin battery-tracker",
+      "Consulta de informes de compatibilidad comunitarios desde la API de Deck Settings",
+      "Frontend en TypeScript y React integrado en Decky Loader, backend en Python",
+      "Publicación con GitHub Actions: build automático y versionado del plugin"
+    ],
+    "en": [
+      "Battery badge on Steam's main game screen with per-game performance data",
+      "Estimated battery life calculation using watt consumption from battery-tracker plugin",
+      "Fetches community compatibility reports from the Deck Settings API",
+      "TypeScript and React frontend integrated in Decky Loader, Python backend",
+      "Published via GitHub Actions: automated build and plugin versioning"
+    ]
+  },
+  "tags": ["Steam Deck", "Decky Loader", "TypeScript", "React", "Python", "Plugin", "Battery"],
+  "stacks": [8, 21, 23, 24],
+  "repo": "https://github.com/cpacheco-perello/Deck-BatteryBadge"
+}
