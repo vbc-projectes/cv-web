@@ -1,12 +1,12 @@
 {
   "name": "Carlos Pacheco Perelló",
-  "title": { "es": "Data Engineer & Científico de Datos", "en": "Data Engineer & Data Scientist" },
+  "title": { "es": "Data Engineer & Científico de Datos Junior", "en": "Junior Data Engineer & Data Scientist" },
   "subtitle": { "es": "Física · Datos · Machine Learning", "en": "Physics · Data · Machine Learning" },
   "bio": {
-    "es": "Cuento con experiencia en análisis de datos, modelización numérica y consultoría técnica, además de una marcada facilidad para aprender nuevos lenguajes de programación y tecnologías. Me caracterizo por una gran capacidad de adaptación y por saber trabajar tanto de forma autónoma como en equipo. Por motivos personales, me trasladaré al País Vasco en julio de 2026, aunque estoy abierto a hacerlo antes por motivos laborales. Busco oportunidades de carácter presencial, así como modalidades híbridas o de teletrabajo.",
-    "en": "I have experience in data analysis, numerical modeling and technical consulting, as well as a strong ability to quickly learn new programming languages and technologies. I am highly adaptable and able to work both independently and as part of a team. For personal reasons, I will be relocating to the Basque Country in July 2026, although I am open to moving earlier for work reasons. I am looking for in-person opportunities, as well as hybrid or remote arrangements."
+    "es": "Perfil técnico versátil con formación en Física (grado + máster en curso, especialidad datos/ML) y experiencia profesional en tres ejes complementarios: ingeniería de datos y machine learning en entornos cloud, gestión de infraestructura virtualizada y contenedorizada, y análisis aplicado con comunicación de resultados a perfiles no técnicos. He trabajado en proyectos que van desde arquitecturas federadas europeas sobre Azure/Kubernetes hasta informes técnicos presentados en recursos legales, pasando por pipelines meteorológicos y análisis de datos satelitales. Abierto a formato presencial, híbrido o remoto.",
+    "en": "Versatile technical profile with a background in Physics (bachelor's degree + ongoing master's, specializing in data/ML) and professional experience across three complementary areas: data engineering and machine learning in cloud environments, virtualized and containerized infrastructure management, and applied analysis with results communicated to non-technical audiences. I have worked on projects ranging from European federated architectures on Azure/Kubernetes to technical reports used in legal appeals, as well as meteorological pipelines and satellite data analysis. Open to on-site, hybrid or remote arrangements."
   },
-  "location": "Palma de Mallorca, ES",
+  "location": "Vitoria-Gasteiz, ES",
   "stats": [
     { "label": { "es": "Años exp.", "en": "Years exp." }, "value": "1+" },
     { "label": { "es": "Proyectos", "en": "Projects" }, "value": "5+" }
