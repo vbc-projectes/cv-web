@@ -12,15 +12,9 @@
     "description": "Gestión de infraestructura virtualizada y contenedorizada, desde clústeres Kubernetes en Azure hasta servidores propios autoalojados."
   },
   {
-    "match": "GIS & Ciencia",
-    "icon": "map-2",
-    "heading": "GIS & Ciencia",
-    "description": "Análisis geoespacial y datos satelitales aplicados a proyectos medioambientales y meteorológicos."
-  },
-  {
-    "match": "Herramientas",
-    "icon": "tool",
-    "heading": "Instrumentación",
-    "description": "Instrumentación científica y caracterización experimental en proyectos de física aplicada."
+    "match": "Física & Ciencia",
+    "icon": "atom-2",
+    "heading": "Física & Ciencia",
+    "description": "Instrumentación científica, análisis geoespacial y simulación aplicados a proyectos de física e investigación."
   }
 ]
