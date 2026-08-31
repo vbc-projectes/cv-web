@@ -1,73 +1,52 @@
-import { Link } from 'react-router-dom'
 import '../styles/hero.css'
 import profile from '../data/profile.json'
-import { projects } from '../data/index.js'
-import { useLang, t } from '../context/LangContext'
-import { ui } from '../i18n/ui'
+
+const initials = profile.name.split(' ').map(w => w[0]).slice(0, 2).join('')
+const socials = profile.contact.filter(c => ['GitHub', 'LinkedIn'].includes(c.type))
 
 export default function Hero() {
-  const { lang } = useLang()
-  const titleStr = t(profile.title, lang)
-  const currentProject = projects.find(p => p.current)
-
   return (
     <section className="hero">
-      <div className="hero-top">
-        <div className="hero-left">
-          <div>
-            <h1 className="hero-name">
-              {titleStr.split(' ').slice(0, 1).join(' ')}<br />
-              <em>{titleStr.split(' ').slice(1).join(' ')}</em>
-            </h1>
-            <p className="hero-role">{t(profile.subtitle, lang)}</p>
-          </div>
-          <div className="hero-tags">
-            {profile.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
-          </div>
-        </div>
-        <div className="hero-right">
-          <p className="hero-bio">{t(profile.bio, lang)}</p>
-          <div className="hero-stats">
-            {profile.stats.map((s, i) => (
-              <div key={i} className="stat">
-                <label>{t(s.label, lang)}</label>
-                <span>{s.value}</span>
-              </div>
+      <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden="true">
+        <filter id="contour-lines" x="-20%" y="-20%" width="140%" height="140%" colorInterpolationFilters="sRGB">
+          <feColorMatrix in="SourceGraphic" type="matrix"
+            values="0.33 0.33 0.33 0 0
+                    0.33 0.33 0.33 0 0
+                    0.33 0.33 0.33 0 0
+                    0    0    0   1 0"
+            result="gray" />
+          <feGaussianBlur in="gray" stdDeviation="2.5" result="blurred" />
+          <feConvolveMatrix in="blurred" order="3" edgeMode="duplicate" preserveAlpha="true"
+            kernelMatrix="-1 -1 -1 -1 8 -1 -1 -1 -1" result="edges" />
+          <feComponentTransfer in="edges" result="boosted">
+            <feFuncR type="linear" slope="18" intercept="-0.25" />
+            <feFuncG type="linear" slope="18" intercept="-0.25" />
+            <feFuncB type="linear" slope="18" intercept="-0.25" />
+          </feComponentTransfer>
+          <feColorMatrix in="boosted" type="luminanceToAlpha" result="mask" />
+          <feFlood style={{ floodColor: 'var(--color-accent)' }} result="tint" />
+          <feComposite in="tint" in2="mask" operator="in" />
+        </filter>
+      </svg>
+
+      <div className="hero-art">
+        <img src="/images/hero-bg.jpg" alt="" className="hero-contour-img" loading="eager" />
+      </div>
+
+      <div className="container hero-inner">
+        <div className="hero-avatar">{initials}</div>
+        <div className="hero-content">
+          <div className="hero-socials">
+            {socials.map(s => (
+              <a key={s.type} href={s.href} target="_blank" rel="noreferrer" aria-label={s.type}>
+                <i className={`ti ti-${s.icon}`} aria-hidden="true" />
+              </a>
             ))}
-            <div className="stat">
-              <label>{t(ui.location, lang)}</label>
-              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '13px' }}>
-                {profile.location}
-              </span>
-            </div>
           </div>
+          <h1 className="hero-name">{profile.name}</h1>
+          <p className="hero-role">{profile.title.es}</p>
         </div>
       </div>
-
-      <div className="hero-contact">
-        {profile.contact.map(c => (
-          <a key={c.type} href={c.href} className="contact-item" target="_blank" rel="noreferrer">
-            <i className={`ti ti-${c.icon}`} aria-hidden="true" />
-            <div className="contact-label">
-              <span className="contact-type">{c.type}</span>
-              <span className="contact-value">{c.value}</span>
-            </div>
-          </a>
-        ))}
-      </div>
-
-      {currentProject && (
-        <div className="hero-now">
-          <div className="hero-now-dot" />
-          <span className="hero-now-label">
-            {lang === 'es' ? 'Trabajando en' : 'Now building'}
-          </span>
-          <span className="hero-now-title">{currentProject.title}</span>
-          <Link to={`/proyectos/${currentProject.id}`} className="hero-now-link">
-            <i className="ti ti-arrow-right" />
-          </Link>
-        </div>
-      )}
     </section>
   )
 }

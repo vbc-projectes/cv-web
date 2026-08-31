@@ -1,0 +1,26 @@
+[
+  {
+    "match": "Datos & ML",
+    "icon": "brain",
+    "heading": "Datos & Machine Learning",
+    "description": "Ingeniería de datos y machine learning en entornos cloud: pipelines, modelos predictivos y análisis aplicado con Python."
+  },
+  {
+    "match": "Cloud & DevOps",
+    "icon": "cloud-computing",
+    "heading": "Cloud & DevOps",
+    "description": "Gestión de infraestructura virtualizada y contenedorizada, desde clústeres Kubernetes en Azure hasta servidores propios autoalojados."
+  },
+  {
+    "match": "GIS & Ciencia",
+    "icon": "map-2",
+    "heading": "GIS & Ciencia",
+    "description": "Análisis geoespacial y datos satelitales aplicados a proyectos medioambientales y meteorológicos."
+  },
+  {
+    "match": "Herramientas",
+    "icon": "tool",
+    "heading": "Instrumentación",
+    "description": "Instrumentación científica y caracterización experimental en proyectos de física aplicada."
+  }
+]

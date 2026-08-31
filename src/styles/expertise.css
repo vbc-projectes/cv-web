@@ -1,0 +1,47 @@
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+}
+
+.expertise-card i {
+  font-size: 30px;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.expertise-card h3 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.expertise-card p {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--color-text-2);
+  margin-bottom: 16px;
+}
+
+.expertise-chips {
+  line-height: 2.1;
+}
+
+.expertise-chips-label {
+  font-size: 11px;
+  color: var(--color-text-3);
+  margin-right: 8px;
+}
+
+.expertise-chips .tag {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

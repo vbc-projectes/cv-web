@@ -1,10 +1,10 @@
 {
   "id": "budget-dashboard",
-  "position": 15,
+  "position": 97,
   "current": true,
   "period": "ene. 2025 — Presente",
   "title": "BudgetDashboard",
-  "image": "https://placehold.co/280x220/1e3a1e/7ec87e?text=Budget+Dashboard",
+  "image": "/images/covers/budget-dashboard.svg",
   "summary": {
     "es": "Finanzas personales · Electron + SQLite · Docker · Multilingüe",
     "en": "Personal finance · Electron + SQLite · Docker · Multilingual"

@@ -1,10 +1,10 @@
 {
   "id": "datosmeteo",
-  "position": 12,
+  "position": 100,
   "current": false,
   "period": "ene. 2024 — Presente",
   "title": "DatosMeteo",
-  "image": "images/DatosMeteo.png",
+  "image": "/images/DatosMeteo.png",
   "summary": {
     "es": "Plataforma de datos meteorológicos · AEMET · Firebase · Backblaze B2",
     "en": "Meteorological data platform · AEMET · Firebase · Backblaze B2"

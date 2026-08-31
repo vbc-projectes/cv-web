@@ -1,10 +1,10 @@
 {
   "id": "streamespana",
-  "position": 10,
+  "position": 95,
   "current": false,
   "period": "feb. 2026 — Presente",
   "title": "StreamWithVPN",
-  "image": "images/Streamespana.png",
+  "image": "/images/Streamespana.png",
   "summary": {
     "es": "App de listas de películas por plataforma y país · React · TypeScript · Tailwind CSS",
     "en": "Movie list app by platform and country · React · TypeScript · Tailwind CSS"

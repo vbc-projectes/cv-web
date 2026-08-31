@@ -1,10 +1,10 @@
 {
   "id": "deck-batterybadge",
-  "position": 14,
+  "position": 96,
   "current": false,
   "period": "abr. 2025 — abr. 2026",
   "title": "Deck-BatteryBadge",
-  "image": "https://placehold.co/280x220/1b3a2f/7ec8a0?text=Deck+BatteryBadge",
+  "image": "/images/covers/deck-batterybadge.svg",
   "summary": {
     "es": "Plugin Steam Deck · Decky Loader · Insignia de batería · TypeScript + Python",
     "en": "Steam Deck plugin · Decky Loader · Battery badge · TypeScript + Python"

@@ -1,10 +1,10 @@
 {
   "id": "homelab",
-  "position": 13,
+  "position": 98,
   "current": false,
   "period": "may. 2026 — Presente",
   "title": "Homelab",
-  "image": "https://placehold.co/280x220/1e3a5f/a0bcd4?text=Homelab",
+  "image": "/images/covers/homelab.svg",
   "summary": {
     "es": "Servidor doméstico · Contenedores · Virtualización · Cloudflare Tunnel",
     "en": "Home server · Containers · Virtualization · Cloudflare Tunnel"

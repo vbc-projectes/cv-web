@@ -1,10 +1,10 @@
 {
   "id": "tfg-uib",
-  "position": 11,
+  "position": 99,
   "current": false,
   "period": "abr. 2024 — sep. 2024",
   "title": "Trabajo de Fin de Grado – UIB",
-  "image": "images/TFG.png",
+  "image": "/images/TFG.png",
   "summary": {
     "es": "TFG Física (9.5/10) · Emisión de campo · Microelectrónica de vacío",
     "en": "Physics Thesis (9.5/10) · Field emission · Vacuum microelectronics"
@@ -32,3 +32,4 @@
   "repo": "https://github.com/cpacheco-perello",
   "pdf": "/pdf/MemoriaTFG24_Pacheco_Perelló_Carlos.pdf"
 }
+
