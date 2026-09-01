@@ -13,14 +13,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <!-- Static mirror of the React contact form, kept outside #root so
-         Netlify's build-time HTML scanner can detect and provision it
-         (Netlify Forms only parses static HTML, not client-rendered JSX). -->
-    <form name="contact" data-netlify="true" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

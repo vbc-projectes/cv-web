@@ -1,11 +1,7 @@
 import { useState } from 'react'
 import '../styles/contact.css'
 
-function encode(data) {
-  return Object.keys(data)
-    .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
-    .join('&')
-}
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/cpacheco.perello@outlook.com'
 
 export default function Contact() {
   const [name, setName] = useState('')
@@ -18,11 +14,19 @@ export default function Contact() {
     if (!name || !email || !message) return
     setStatus('sending')
     try {
-      await fetch('/', {
+      const res = await fetch(FORM_ENDPOINT, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'contact', name, email, message }),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          _subject: `Nuevo mensaje de ${name} · cpacheco-perello.com`,
+          _template: 'table',
+          _captcha: 'false',
+        }),
       })
+      if (!res.ok) throw new Error('request failed')
       setStatus('sent')
       setName('')
       setEmail('')
@@ -43,14 +47,7 @@ export default function Contact() {
             <i className="ti ti-circle-check" aria-hidden="true" /> Mensaje enviado. ¡Gracias! Te responderé en breve.
           </p>
         ) : (
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            onSubmit={handleSubmit}
-            className="contact-form"
-          >
-            <input type="hidden" name="form-name" value="contact" />
+          <form onSubmit={handleSubmit} className="contact-form">
             <div className="contact-form-row">
               <div className="contact-field">
                 <label htmlFor="c-name">Nombre</label>
