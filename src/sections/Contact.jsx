@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../styles/contact.css'
 
-const FORM_ENDPOINT = 'https://formsubmit.co/ajax/cpacheco.perello@outlook.com'
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/8ede736e9cc3e2abe7fbae0e5a61726e'
 
 export default function Contact() {
   const [name, setName] = useState('')
