@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import '../styles/hero.css'
 import profile from '../data/profile.json'
 
@@ -5,6 +6,13 @@ const initials = profile.name.split(' ').map(w => w[0]).slice(0, 2).join('')
 const socials = profile.contact.filter(c => ['GitHub', 'LinkedIn'].includes(c.type))
 
 export default function Hero() {
+  const [spinning, setSpinning] = useState(false)
+
+  const handleAvatarClick = () => {
+    setSpinning(true)
+    setTimeout(() => setSpinning(false), 800)
+  }
+
   return (
     <section className="hero">
       <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden="true">
@@ -34,7 +42,16 @@ export default function Hero() {
       </div>
 
       <div className="container hero-inner">
-        <div className="hero-avatar">{initials}</div>
+        <a
+          href="/CarlosPachecoPerello-CV.pdf"
+          download
+          className="hero-avatar-link"
+          onClick={handleAvatarClick}
+          aria-label="Descargar CV en PDF"
+          title="Descargar CV (PDF)"
+        >
+          <span className={`hero-avatar${spinning ? ' hero-avatar-spin' : ''}`}>{initials}</span>
+        </a>
         <div className="hero-content">
           <div className="hero-socials">
             {socials.map(s => (
