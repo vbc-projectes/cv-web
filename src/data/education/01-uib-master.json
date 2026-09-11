@@ -4,13 +4,13 @@
   "degree": { "es": "Máster en Física Avanzada y Matemática Aplicada", "en": "M.Sc. Advanced Physics and Applied Mathematics" },
   "institution": "Universitat de les Illes Balears",
   "summary": {
-    "es": "Machine Learning aplicado · Simulación de fluidos · Tratamiento de imágenes",
-    "en": "Applied Machine Learning · Fluid simulation · Image processing"
+    "es": "Visión por computador · Deep Learning aplicado a imágenes · Oceanografía numérica",
+    "en": "Computer vision · Deep learning for imaging · Numerical oceanography"
   },
   "description": {
-    "es": "Máster con itinerario en análisis de datos, machine learning, procesamiento de imágenes mediante deep learning, tratamiento de datos y simulación de fluidos geofísicos.",
-    "en": "Master's degree with a focus on data analysis, machine learning, image processing via deep learning, data treatment and geophysical fluid simulation."
+    "es": "Máster con itinerario especializado en visión por computador, deep learning aplicado a imágenes, hidrometeorología/oceanografía numérica y tratamiento masivo de datos.",
+    "en": "Master's degree with a specialized track in computer vision, deep learning applied to imaging, numerical hydrometeorology/oceanography, and large-scale data processing."
   },
-  "tags": ["Machine Learning", "Deep Learning", "Física Computacional", "Simulación", "Matemática Aplicada"],
+  "tags": ["Machine Learning", "Deep Learning", "Visión por Computador", "Oceanografía Numérica", "Big Data"],
   "stacks": [1]
 }

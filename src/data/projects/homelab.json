@@ -6,28 +6,30 @@
   "title": "Homelab",
   "image": "/images/covers/homelab.svg",
   "summary": {
-    "es": "Servidor doméstico · Contenedores · Virtualización · Cloudflare Tunnel",
-    "en": "Home server · Containers · Virtualization · Cloudflare Tunnel"
+    "es": "Proxmox VE · Docker Compose · WireGuard VPN · Cloudflare Tunnel",
+    "en": "Proxmox VE · Docker Compose · WireGuard VPN · Cloudflare Tunnel"
   },
   "description": {
-    "es": "Despliegue y administración de un servidor doméstico con servicios en contenedores Docker, virtualización de entornos, túneles Cloudflare para exposición segura, y automatización de infraestructura.",
-    "en": "Deployment and administration of a home server with Docker containers, environment virtualization, Cloudflare tunnels for secure exposure, and infrastructure automation."
+    "es": "Servidor doméstico sobre Proxmox VE con máquinas virtuales aisladas, NAS, servicios en contenedores con Docker Compose, VPN WireGuard y DNS propio, con monitorización mediante Beszel. Incluye un worker dedicado al pipeline de DatosMeteo: descarga y procesamiento de modelos de previsión con almacenamiento en Backblaze B2, vía CI/CD en GitHub.",
+    "en": "Home server on Proxmox VE with isolated virtual machines, NAS, Docker Compose containerized services, WireGuard VPN and self-hosted DNS, monitored with Beszel. Includes a worker dedicated to the DatosMeteo pipeline: downloading and processing forecast models with storage on Backblaze B2, via GitHub CI/CD."
   },
   "details": {
     "es": [
-      "Administración de servidor Linux con servicios contenerizados",
-      "Virtualización de entornos de desarrollo y pruebas",
-      "Túneles Cloudflare para exposición segura de servicios",
-      "Automatización de infraestructura con scripts y contenedores"
+      "Servidor Proxmox VE con máquinas virtuales aisladas y NAS",
+      "Servicios en contenedores gestionados con Docker Compose",
+      "VPN WireGuard y DNS propio, con monitorización mediante Beszel",
+      "Worker dedicado al pipeline de DatosMeteo (descarga/procesamiento de modelos, almacenamiento en Backblaze B2, CI/CD en GitHub)",
+      "Túneles Cloudflare para exposición segura de servicios adicionales"
     ],
     "en": [
-      "Linux server administration with containerized services",
-      "Development and testing environment virtualization",
-      "Cloudflare tunnels for secure service exposure",
-      "Infrastructure automation with scripts and containers"
+      "Proxmox VE server with isolated virtual machines and NAS",
+      "Containerized services managed with Docker Compose",
+      "WireGuard VPN and self-hosted DNS, monitored with Beszel",
+      "Worker dedicated to the DatosMeteo pipeline (forecast model download/processing, Backblaze B2 storage, GitHub CI/CD)",
+      "Cloudflare tunnels for secure exposure of additional services"
     ]
   },
-  "tags": ["Docker", "Linux", "Cloudflare Tunnel", "Virtualización", "Self-hosting", "Infraestructura"],
+  "tags": ["Proxmox VE", "Docker Compose", "WireGuard", "Beszel", "Cloudflare Tunnel", "Self-hosting", "Infraestructura"],
   "stacks": [7, 8, 21],
   "repo": "https://github.com/cpacheco-perello"
 }
