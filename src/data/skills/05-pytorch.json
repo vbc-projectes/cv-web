@@ -1,1 +1,1 @@
-{ "id": "pytorch",    "name": "PyTorch",          "level": 3, "category": { "es": "Datos & ML",    "en": "Data & ML"      } }
+{ "id": "pytorch",    "name": "PyTorch",          "level": 3, "category": "data-ml" }

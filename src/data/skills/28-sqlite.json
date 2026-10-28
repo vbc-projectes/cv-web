@@ -1,1 +1,1 @@
-{ "id": "sqlite", "name": "SQLite", "level": 3, "category": { "es": "Datos & ML", "en": "Data & ML" } }
+{ "id": "sqlite", "name": "SQLite", "level": 3, "category": "data-ml" }

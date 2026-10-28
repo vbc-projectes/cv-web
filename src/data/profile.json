@@ -1,6 +1,11 @@
 {
   "name": "Carlos Pacheco Perelló",
-  "title": { "es": "Físico — Est. de MSc en Física Avanzada y Matemática Aplicada", "en": "Physicist — MSc Student in Advanced Physics and Applied Mathematics" },
+  "title": { "es": "Físico · Datos & Machine Learning", "en": "Physicist · Data & Machine Learning" },
+  "headline": {
+    "es": "Pipelines de datos, modelos predictivos y simulación física, del laboratorio a la nube. Cursando el Máster en Física Avanzada y Matemática Aplicada (UIB).",
+    "en": "Data pipelines, predictive models and physical simulation, from the lab to the cloud. Currently pursuing an MSc in Advanced Physics and Applied Mathematics (UIB)."
+  },
+  "availability": { "es": "Presencial, híbrido o remoto", "en": "On-site, hybrid or remote" },
   "subtitle": { "es": "Física · Datos · Machine Learning", "en": "Physics · Data · Machine Learning" },
   "bio": {
     "es": "Físico con formación en Física (grado + máster en curso, especialidad en datos y ML) y experiencia combinando simulación física, caracterización experimental y análisis de datos aplicado. Mi TFG combinó simulación con COMSOL Multiphysics y experimentación en laboratorio controlado (LabVIEW) para la caracterización de un dispositivo de emisión de campo en microelectrónica de vacío. Complemento esta base con machine learning y deep learning aplicado (TensorFlow/Keras, PyTorch) y experiencia real en pipelines de datos desplegados en producción. Abierto a formato presencial, híbrido o remoto.",
@@ -22,6 +27,6 @@
   "languages": [
     { "name": { "es": "Español",  "en": "Spanish" }, "level": { "es": "Nativo",           "en": "Native"          } },
     { "name": { "es": "Catalán",  "en": "Catalan" }, "level": { "es": "Nativo",           "en": "Native"          } },
-    { "name": { "es": "Inglés",   "en": "English" }, "level": { "es": "B2 · Certificado C2", "en": "B2 · C2 Certified" } }
+    { "name": { "es": "Inglés",   "en": "English" }, "level": { "es": "B2 · Certificado EF SET C2 (85/100)", "en": "B2 · EF SET C2 certified (85/100)" } }
   ]
 }

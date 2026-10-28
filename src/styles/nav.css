@@ -32,6 +32,24 @@
   line-height: 1;
 }
 
+.nav-lang-btn {
+  background: none;
+  border: 0.5px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text-1);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.nav-lang-btn:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent-border);
+}
+
 .nav-burger {
   display: none;
   margin-right: auto;

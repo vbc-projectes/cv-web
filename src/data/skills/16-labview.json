@@ -1,1 +1,1 @@
-{ "id": "labview",    "name": "LabVIEW",          "level": 2, "category": { "es": "Física & Ciencia", "en": "Physics & Science" } }
+{ "id": "labview",    "name": "LabVIEW",          "level": 2, "category": "physics" }

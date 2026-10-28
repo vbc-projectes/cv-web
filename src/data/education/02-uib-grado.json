@@ -1,6 +1,6 @@
 {
   "id": "uib-grado",
-  "period": "sep.2018 — jun.2025",
+  "start": "2018-09", "end": "2025-06",
   "degree": { "es": "Grado de Física", "en": "B.Sc. Physics" },
   "institution": "Universitat de les Illes Balears",
   "summary": {

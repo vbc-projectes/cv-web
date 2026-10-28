@@ -1,13 +1,13 @@
 {
   "id": "tfg-uib",
-  "position": 99,
-  "current": false,
-  "period": "abr. 2024 — sep. 2024",
-  "title": "Trabajo de Fin de Grado – UIB",
-  "image": "/images/TFG.png",
+  "position": 99,
+  "start": "2024-04", "end": "2024-09",
+  "title": { "es": "Trabajo de Fin de Grado – UIB", "en": "Bachelor's Thesis – UIB" },
+  "image": "/images/projects/tfg-uib.webp",
+  "frame": "none",
   "summary": {
-    "es": "TFG Física (9.5/10) · Emisión de campo · Microelectrónica de vacío",
-    "en": "Physics Thesis (9.5/10) · Field emission · Vacuum microelectronics"
+    "es": "Caracterización experimental y simulación de un dispositivo de emisión de campo para microelectrónica de vacío. Nota: 9,5/10.",
+    "en": "Experimental characterization and simulation of a field-emission device for vacuum microelectronics. Grade: 9.5/10."
   },
   "description": {
     "es": "Caracterización experimental de un dispositivo de emisión de campo integrado para aplicaciones en microelectrónica de vacío. Nota final: 9,5/10.",
@@ -29,7 +29,6 @@
   },
   "tags": ["LabVIEW", "COMSOL", "Python", "LaTeX", "Física Experimental"],
   "stacks": [1, 13, 19, 20],
-  "repo": "https://github.com/cpacheco-perello",
   "pdf": "/pdf/MemoriaTFG24_Pacheco_Perelló_Carlos.pdf"
 }
 

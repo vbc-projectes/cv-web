@@ -22,6 +22,7 @@
 }
 
 .footer p {
+  font-family: var(--font-mono);
   font-size: 11px;
   color: var(--color-text-3);
   letter-spacing: 0.03em;

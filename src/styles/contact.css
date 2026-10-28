@@ -22,7 +22,8 @@
 }
 
 .contact-field label {
-  font-size: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-text-3);
@@ -30,8 +31,8 @@
 
 .contact-field input,
 .contact-field textarea {
-  font-family: var(--font-mono);
-  font-size: 13px;
+  font-family: var(--font-sans);
+  font-size: 14px;
   color: var(--color-text-1);
   background: var(--color-bg);
   border: 0.5px solid var(--color-border);
@@ -49,24 +50,6 @@
 
 .contact-submit {
   align-self: flex-start;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-bg);
-  background: var(--color-accent);
-  border: none;
-  border-radius: 6px;
-  padding: 12px 22px;
-  cursor: pointer;
-  transition: opacity 0.15s;
-}
-
-.contact-submit:hover {
-  opacity: 0.88;
 }
 
 .contact-submit:disabled {
@@ -92,4 +75,35 @@
   .contact-form-row {
     flex-direction: column;
   }
+}
+
+.contact-direct {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  font-size: 14px;
+  color: var(--color-text-2);
+  margin: -24px 0 32px;
+}
+
+.contact-direct a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-accent);
+}
+
+.contact-direct a:hover {
+  text-decoration: underline;
+}
+
+.contact-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }

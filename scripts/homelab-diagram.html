@@ -1,0 +1,110 @@
+<!doctype html>
+<!-- Source of public/images/projects/homelab.webp: render at 1440x900 (Chrome headless screenshot) and convert to WebP. -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1440px; height: 900px; background: #0f141b; overflow: hidden; }
+  svg { display: block; }
+  text { font-family: 'DM Mono', monospace; }
+  .lbl { font-size: 22px; fill: #e8edf5; }
+  .sub { font-size: 15px; fill: #8b97a8; letter-spacing: 1px; }
+  .title { font-family: 'DM Sans', sans-serif; font-size: 26px; fill: #e8edf5; font-weight: 500; }
+  .tag { font-size: 14px; fill: #9fb0ff; letter-spacing: 2px; }
+</style></head>
+<body>
+<svg width="1440" height="900" viewBox="0 0 1440 900"><g transform="translate(0,35)">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6b7a90"/>
+    </marker>
+  </defs>
+  <rect y="-35" width="1440" height="900" fill="url(#grid)"/>
+
+  <!-- Internet -->
+  <g transform="translate(80,90)">
+    <rect width="260" height="96" rx="14" fill="#161d27" stroke="#2c3644"/>
+    <text x="28" y="44" class="lbl">Internet</text>
+    <text x="28" y="72" class="sub">acceso remoto</text>
+  </g>
+
+  <!-- Entry points -->
+  <g transform="translate(80,250)">
+    <rect width="260" height="96" rx="14" fill="#1b1f2e" stroke="#f38020" stroke-opacity="0.7"/>
+    <circle cx="34" cy="48" r="9" fill="#f38020"/>
+    <text x="56" y="44" class="lbl">Cloudflare</text>
+    <text x="56" y="72" class="sub">tunnel</text>
+  </g>
+  <g transform="translate(80,390)">
+    <rect width="260" height="96" rx="14" fill="#1b1f2e" stroke="#88171a" stroke-opacity="0.9"/>
+    <circle cx="34" cy="48" r="9" fill="#d94a4f"/>
+    <text x="56" y="44" class="lbl">WireGuard</text>
+    <text x="56" y="72" class="sub">VPN</text>
+  </g>
+  <path d="M210 186V246" stroke="#6b7a90" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M80 138H40V438H76" fill="none" stroke="#6b7a90" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Proxmox host -->
+  <g transform="translate(420,70)">
+    <rect width="660" height="690" rx="22" fill="#121a24" stroke="#4d60e4" stroke-width="2"/>
+    <text x="36" y="58" class="title">Proxmox VE</text>
+    <text x="36" y="88" class="tag">HOST · VIRTUALIZACIÓN</text>
+
+    <g transform="translate(36,130)">
+      <rect width="282" height="120" rx="14" fill="#18222f" stroke="#2c3644"/>
+      <text x="26" y="52" class="lbl">VMs aisladas</text>
+      <text x="26" y="84" class="sub">máquinas virtuales</text>
+    </g>
+    <g transform="translate(342,130)">
+      <rect width="282" height="120" rx="14" fill="#18222f" stroke="#2c3644"/>
+      <text x="26" y="52" class="lbl">NAS</text>
+      <text x="26" y="84" class="sub">almacenamiento</text>
+    </g>
+
+    <g transform="translate(36,280)">
+      <rect width="588" height="200" rx="14" fill="#18222f" stroke="#2c3644"/>
+      <text x="26" y="48" class="lbl">Docker Compose</text>
+      <text x="26" y="78" class="sub">servicios en contenedores</text>
+      <g transform="translate(26,104)">
+        <rect width="168" height="64" rx="10" fill="#1f2b3a" stroke="#34445a"/>
+        <text x="22" y="40" class="lbl" style="font-size:19px">DNS propio</text>
+      </g>
+      <g transform="translate(210,104)">
+        <rect width="168" height="64" rx="10" fill="#1f2b3a" stroke="#34445a"/>
+        <text x="22" y="40" class="lbl" style="font-size:19px">Beszel</text>
+      </g>
+      <g transform="translate(394,104)">
+        <rect width="168" height="64" rx="10" fill="#1f2b3a" stroke="#34445a"/>
+        <text x="22" y="40" class="lbl" style="font-size:19px">servicios</text>
+      </g>
+    </g>
+
+    <g transform="translate(36,510)">
+      <rect width="588" height="140" rx="14" fill="#1d2233" stroke="#4d60e4" stroke-opacity="0.8"/>
+      <text x="26" y="52" class="lbl">Worker DatosMeteo</text>
+      <text x="26" y="84" class="sub">descarga y procesado de modelos</text>
+      <text x="26" y="112" class="sub">de previsión</text>
+    </g>
+  </g>
+
+  <path d="M340 298H416" stroke="#6b7a90" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M340 438H416" stroke="#6b7a90" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- External services -->
+  <g transform="translate(1140,500)">
+    <rect width="240" height="96" rx="14" fill="#161d27" stroke="#2c3644"/>
+    <text x="28" y="44" class="lbl">GitHub</text>
+    <text x="28" y="72" class="sub">CI/CD</text>
+  </g>
+  <g transform="translate(1140,652)">
+    <rect width="240" height="96" rx="14" fill="#161d27" stroke="#e05243" stroke-opacity="0.8"/>
+    <text x="28" y="44" class="lbl">Backblaze B2</text>
+    <text x="28" y="72" class="sub">almacenamiento</text>
+  </g>
+  <path d="M1136 548H1100V610H1048" fill="none" stroke="#6b7a90" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M1048 700H1136" stroke="#6b7a90" stroke-width="2" marker-end="url(#arr)"/>
+</g></svg>
+</body></html>

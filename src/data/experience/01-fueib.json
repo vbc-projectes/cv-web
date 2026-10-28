@@ -1,8 +1,8 @@
 {
 "id": "fueib",
-"period": "oct. 2025 — jun. 2026",
+"start": "2025-10", "end": "2026-06",
 "company": "Fundació Universitat-Empresa de les Illes Balears (FUEIB)",
-"role": "Ingeniero de Espacios de Datos / Científico de Datos",
+"role": { "es": "Ingeniero de Espacios de Datos / Científico de Datos", "en": "Data Spaces Engineer / Data Scientist" },
 "summary": {
 "es": "Espacio de datos turístico federado (ESDATIB) · SIMPL-Open · Azure Databricks",
 "en": "Federated tourism data space (ESDATIB) · SIMPL-Open · Azure Databricks"

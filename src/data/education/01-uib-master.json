@@ -1,6 +1,6 @@
 {
   "id": "uib-master",
-  "period": "oct.2025 — Presente",
+  "start": "2025-10", "end": null,
   "degree": { "es": "Máster en Física Avanzada y Matemática Aplicada", "en": "M.Sc. Advanced Physics and Applied Mathematics" },
   "institution": "Universitat de les Illes Balears",
   "summary": {

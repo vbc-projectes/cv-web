@@ -22,7 +22,4 @@
       <rect x="14" y="24" width="65" height="32" rx="3" fill="#fff3ea" fill-opacity="0.85" stroke="none"/>
     </g>
   </g>
-
-  <text x="40" y="380" font-family="'DM Mono', monospace" font-size="13" letter-spacing="2" fill="#fff3ea" fill-opacity="0.65">STEAM DECK · PLUGIN</text>
-  <text x="40" y="410" font-family="'DM Serif Display', serif" font-size="30" fill="#fff8f2">Deck-BatteryBadge</text>
 </svg>

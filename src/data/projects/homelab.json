@@ -1,13 +1,14 @@
 {
   "id": "homelab",
   "position": 98,
-  "current": false,
-  "period": "may. 2026 — Presente",
+  "start": "2026-05", "end": null,
   "title": "Homelab",
-  "image": "/images/covers/homelab.svg",
+  "image": "/images/projects/homelab.webp",
+  "frame": "none",
+  "featured": true,
   "summary": {
-    "es": "Proxmox VE · Docker Compose · WireGuard VPN · Cloudflare Tunnel",
-    "en": "Proxmox VE · Docker Compose · WireGuard VPN · Cloudflare Tunnel"
+    "es": "Servidor doméstico con máquinas virtuales, servicios en contenedores y VPN, que además ejecuta el pipeline de datos de DatosMeteo.",
+    "en": "Home server with virtual machines, containerized services and VPN that also runs the DatosMeteo data pipeline."
   },
   "description": {
     "es": "Servidor doméstico sobre Proxmox VE con máquinas virtuales aisladas, NAS, servicios en contenedores con Docker Compose, VPN WireGuard y DNS propio, con monitorización mediante Beszel. Incluye un worker dedicado al pipeline de DatosMeteo: descarga y procesamiento de modelos de previsión con almacenamiento en Backblaze B2, vía CI/CD en GitHub.",
@@ -30,6 +31,5 @@
     ]
   },
   "tags": ["Proxmox VE", "Docker Compose", "WireGuard", "Beszel", "Cloudflare Tunnel", "Self-hosting", "Infraestructura"],
-  "stacks": [7, 8, 21],
-  "repo": "https://github.com/cpacheco-perello"
+  "stacks": [7, 8, 21]
 }

@@ -1,13 +1,13 @@
 {
   "id": "budget-dashboard",
-  "position": 97,
-  "current": true,
-  "period": "ene. 2025 — Presente",
+  "position": 97,
+  "start": "2025-01", "end": null,
   "title": "BudgetDashboard",
-  "image": "/images/covers/budget-dashboard.svg",
+  "image": "/images/projects/budget-dashboard.webp",
+  "frame": "window",
   "summary": {
-    "es": "Finanzas personales · Electron + SQLite · Docker · Multilingüe",
-    "en": "Personal finance · Electron + SQLite · Docker · Multilingual"
+    "es": "Aplicación de escritorio de finanzas personales: ingresos, gastos, ahorros e inversiones, con gráficos y 6 idiomas.",
+    "en": "Desktop personal finance app: income, expenses, savings and investments, with charts and 6 languages."
   },
   "description": {
     "es": "Aplicación de escritorio ligera para gestión de finanzas personales. Registra ingresos, gastos, ahorros e inversiones en una base de datos SQLite local, con gráficos de tendencias, más de 18 temas visuales y una interfaz multilingüe (ES, EN, PT, FR, EU, CA).",

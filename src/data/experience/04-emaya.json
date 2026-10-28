@@ -1,8 +1,8 @@
 {
 "id": "emaya",
-"period": "nov. 2024 — may. 2025",
+"start": "2024-11", "end": "2025-05",
 "company": "EMAYA, S.A.",
-"role": "Prácticas · Departament d'Estratègia i Desenvolupament",
+"role": { "es": "Prácticas · Departament d'Estratègia i Desenvolupament", "en": "Internship · Strategy and Development Department" },
 "summary": {
 "es": "Análisis hidrológico y geoespacial para la planificación de infraestructuras de aguas regeneradas",
 "en": "Hydrological and geospatial analysis for reclaimed water infrastructure planning"

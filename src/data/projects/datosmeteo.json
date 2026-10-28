@@ -1,13 +1,14 @@
 {
   "id": "datosmeteo",
   "position": 100,
-  "current": false,
-  "period": "ene. 2024 — Presente",
+  "start": "2024-01", "end": null,
   "title": "DatosMeteo",
-  "image": "/images/DatosMeteo.png",
+  "image": "/images/projects/datosmeteo.webp",
+  "frame": "browser",
+  "featured": true,
   "summary": {
-    "es": "AEMET · Previsión internacional · Python · Backblaze B2 + Cloudflare CDN",
-    "en": "AEMET · International forecasts · Python · Backblaze B2 + Cloudflare CDN"
+    "es": "Plataforma web que descarga, procesa y visualiza datos de la AEMET y de modelos de previsión internacionales.",
+    "en": "Web platform that downloads, processes and visualizes AEMET data and international forecast models."
   },
   "description": {
     "es": "Plataforma de descarga y visualización de datos meteorológicos de la AEMET y de modelos de previsión internacionales. Backend en Python desplegado en entorno cloud mediante GitHub Actions sobre Render, con base de datos Firebase y almacenamiento en Backblaze B2 servido a través de Cloudflare CDN.",
@@ -27,6 +28,5 @@
   },
   "tags": ["Python", "Firebase", "Backblaze B2", "AEMET", "Render", "GitHub Actions", "Cloudflare CDN"],
   "stacks": [1, 15, 16, 17, 18],
-  "link": "https://datosmeteo.com/",
-  "repo": "https://github.com/cpacheco-perello"
+  "link": "https://datosmeteo.com/"
 }

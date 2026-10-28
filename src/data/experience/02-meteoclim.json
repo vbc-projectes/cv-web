@@ -1,8 +1,8 @@
 {
 "id": "meteoclim",
-"period": "ago. 2025 — oct. 2025",
+"start": "2025-08", "end": "2025-10",
 "company": "Meteoclim",
-"role": "Técnico y Meteorólogo Junior",
+"role": { "es": "Técnico y Meteorólogo Junior", "en": "Junior Technician & Meteorologist" },
 "summary": {
 "es": "Predicción meteorológica operativa · Monitorización de sistemas",
 "en": "Operational weather forecasting · Systems monitoring"

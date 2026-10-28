@@ -1,20 +1,38 @@
 [
   {
-    "match": "Datos & ML",
+    "id": "data-ml",
     "icon": "brain",
-    "heading": "Datos & Machine Learning",
-    "description": "Ingeniería de datos y machine learning en entornos cloud: pipelines, modelos predictivos y análisis aplicado con Python."
+    "heading": { "es": "Datos & Machine Learning", "en": "Data & Machine Learning" },
+    "description": {
+      "es": "Ingeniería de datos y machine learning en entornos cloud: pipelines, modelos predictivos y análisis aplicado con Python.",
+      "en": "Data engineering and machine learning in cloud environments: pipelines, predictive models and applied analysis with Python."
+    }
   },
   {
-    "match": "Cloud & DevOps",
+    "id": "cloud-devops",
     "icon": "cloud-computing",
-    "heading": "Cloud & DevOps",
-    "description": "Gestión de infraestructura virtualizada y contenedorizada, desde clústeres Kubernetes en Azure hasta servidores propios autoalojados."
+    "heading": { "es": "Cloud & DevOps", "en": "Cloud & DevOps" },
+    "description": {
+      "es": "Gestión de infraestructura virtualizada y contenedorizada, desde clústeres Kubernetes en Azure hasta servidores propios autoalojados.",
+      "en": "Management of virtualized and containerized infrastructure, from Kubernetes clusters on Azure to self-hosted servers."
+    }
   },
   {
-    "match": "Física & Ciencia",
+    "id": "dev",
+    "icon": "code",
+    "heading": { "es": "Desarrollo", "en": "Development" },
+    "description": {
+      "es": "Aplicaciones web y de escritorio, APIs y automatización del ciclo de despliegue con control de versiones y CI/CD.",
+      "en": "Web and desktop applications, APIs and deployment automation with version control and CI/CD."
+    }
+  },
+  {
+    "id": "physics",
     "icon": "atom-2",
-    "heading": "Física & Ciencia",
-    "description": "Instrumentación científica, análisis geoespacial y simulación aplicados a proyectos de física e investigación."
+    "heading": { "es": "Física & Ciencia", "en": "Physics & Science" },
+    "description": {
+      "es": "Instrumentación científica, análisis geoespacial y simulación aplicados a proyectos de física e investigación.",
+      "en": "Scientific instrumentation, geospatial analysis and simulation applied to physics and research projects."
+    }
   }
 ]

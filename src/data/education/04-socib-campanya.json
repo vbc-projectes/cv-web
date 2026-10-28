@@ -1,6 +1,6 @@
 {
   "id": "socib-campanya",
-  "period": "mar. 2023",
+  "start": "2023-03", "end": "2023-03",
   "degree": { "es": "Campaña Oceanográfica con el SOCIB", "en": "Oceanographic Campaign with SOCIB" },
   "institution": "Universitat de les Illes Balears · SOCIB",
   "summary": {

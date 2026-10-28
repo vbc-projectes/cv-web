@@ -1,1 +1,1 @@
-{ "id": "azure",      "name": "Azure / AKS",      "level": 3, "category": { "es": "Cloud & DevOps", "en": "Cloud & DevOps" } }
+{ "id": "azure",      "name": "Azure / AKS",      "level": 3, "category": "cloud-devops" }

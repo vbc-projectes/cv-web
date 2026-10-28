@@ -1,13 +1,13 @@
 {
   "id": "deck-batterybadge",
   "position": 96,
-  "current": false,
-  "period": "abr. 2025 — abr. 2026",
+  "start": "2025-04", "end": null,
   "title": "Deck-BatteryBadge",
-  "image": "/images/covers/deck-batterybadge.svg",
+  "image": "/images/projects/deck-batterybadge.svg",
+  "frame": "none",
   "summary": {
-    "es": "Plugin Steam Deck · Decky Loader · Insignia de batería · TypeScript + Python",
-    "en": "Steam Deck plugin · Decky Loader · Battery badge · TypeScript + Python"
+    "es": "Plugin para Steam Deck que muestra el consumo de batería de cada juego y estima la autonomía restante.",
+    "en": "Steam Deck plugin that shows each game's battery consumption and estimates the remaining battery life."
   },
   "description": {
     "es": "Fork del plugin Decky Game Settings para Decky Loader que añade una insignia en la pantalla principal del juego con datos de consumo de batería, y permite calcular la autonomía estimada a partir del consumo en vatios registrado por el plugin battery-tracker.",

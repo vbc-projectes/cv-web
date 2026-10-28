@@ -1,6 +1,6 @@
 {
   "id": "imedea",
-  "period": "ene. 2025 — abr. 2025",
+  "start": "2025-01", "end": "2025-04",
   "degree": { "es": "Prácticas Universitarias · Oceanografía", "en": "University Internship · Physical Oceanography" },
   "institution": "IMEDEA – Institut Mediterrani d'Estudis Avançats",
   "link": "https://cpacheco-perello.github.io/Practicas_Oceonografia_IMEDEA/",
